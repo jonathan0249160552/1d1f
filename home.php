@@ -10,107 +10,15 @@
     <title>1D1F</title>
     <link rel="stylesheet" href="assets/css/style-freedom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="assets/css/style-freedom.css"> -->
-
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 
 <body>
     <meta name="robots" content="noindex">
 
     <body>
-
+        <?php require 'header.php' ?>
         <!-- header -->
-        <div class="w3l-headers-9">
-            <header>
-                <div class="wrapper">
-                    <div class="header">
-
-                        <div>
-                            <h1>
-
-                                <a class="logo" href="index.html">
-                                    <img src="assets/images/logo.jpeg" alt="Your logo" title="Your logo"
-                                        style="height:35px;" />
-                                </a>
-                            </h1>
-                        </div>
-                        <div class="bottom-menu-content">
-                            <input type="checkbox" id="nav" />
-                            <label for="nav" class="menu-bar"></label>
-                            <nav>
-                                <ul class="menu">
-                                    <li><a href="index.html" class="link-nav">Home</a></li>
-                                    <li><a href="about.html" class="link-nav">About</a></li>
-                                    <li>
-                                        <!-- First Tier Drop Down -->
-                                        <label for="drop-2" class="toggle toogle-2">Pages <span class="fa fa-caret-down"
-                                                aria-hidden="true"></span></label>
-                                        <a href="#pages" class="link-nav dropdown-toggle">Pages <span
-                                                class="fa fa-caret-down" aria-hidden="true"></span></a>
-                                        <input type="checkbox" id="drop-2" />
-                                        <ul class="first-dropdwon">
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="jobs.html">Jobs</a></li>
-                                            <li><a href="services-single.html">Services single</a></li>
-                                            <li><a href="team.html">Team Page</a></li>
-                                            <!-- <li><a href="team-single.html">Team single</a></li> -->
-                                            <li><a href="gallery.html">Gallery</a></li>
-                                            <!-- <li><a href="portfolio-single.html">Portfolio Single</a></li> -->
-                                            <li><a href="timeline.html">Timeline</a></li>
-                                            <li><a href="faq.html">Faq page</a></li>
-                                            <!-- <li><a href="coming-soon.html">Coming Soon</a></li> -->
-                                            <li><a href="error.html">404 - error</a></li>
-                                            <!-- <li><a href="search-results.html">Search Results</a></li>
-                                            <li><a href="email-template.html">Email Template</a></li> -->
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <label for="drop-3" class="toggle toogle-2">Blog <span class="fa fa-caret-down"
-                                                aria-hidden="true"></span></label>
-                                        <a href="#blog" class="link-nav dropdown-toggle">Blog <span
-                                                class="fa fa-caret-down" aria-hidden="true"></span></a>
-                                        <input type="checkbox" id="drop-3" />
-                                        <ul>
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-single.html">Blog Single</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <label for="drop-4" class="toggle toogle-2">Profile <span
-                                                class="fa fa-caret-down" aria-hidden="true"></span></label>
-                                        <a href="#shop" class="link-nav dropdown-toggle">Profile <span
-                                                class="fa fa-caret-down" aria-hidden="true"></span></a>
-                                        <input type="checkbox" id="drop-4" />
-                                        <ul>
-                                            <li><a href="login.html">Login</a></li>
-                                            <li><a href="signup.html">Signup</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <label for="drop-5" class="toggle toogle-2">Shop <span class="fa fa-caret-down"
-                                                aria-hidden="true"></span></label>
-                                        <a href="#shop" class="link-nav dropdown-toggle">Shop <span
-                                                class="fa fa-caret-down" aria-hidden="true"></span></a>
-                                        <input type="checkbox" id="drop-5" />
-                                        <ul>
-                                            <li><a href="ecommerce.html">Ecommerce</a></li>
-                                            <li><a href="ecommerce-single.html">Ecommerce Single</a></li>
-                                            <li><a href="ecommerce-cart.html">Ecommerce Cart</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html" class="link-nav">Contact</a></li>
-
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <!-- //header -->
-        </div>
-
         <!-- covers -->
         <section class="w3l-covers-9-main">
             <div class="covers-9">
@@ -129,7 +37,7 @@
                                         <p class="para-cover-9">The 1D1F is one of the main components of Government’s
                                             Ten Point Industrialization Plan.</p>
                                         <a href="about.html" class="actionbg button-cover-9">Read More</a>
-                                        <a href="contact.html" class="actionbg-border button-cover-9">Get in touch</a>
+                                        <a href="contact.php" class="actionbg-border button-cover-9">Get in touch</a>
                                     </div>
                                 </div>
                             </div>
@@ -144,7 +52,7 @@
                                         culpa qui officia sed deserunt mollit anim id est laborum mollit anim id est
                                         nulla.</p> -->
                                         <a href="about.html" class="actionbg button-cover-9">Read More</a>
-                                        <a href="contact.html" class="actionbg-border button-cover-9">Get in touch</a>
+                                        <a href="contact.php" class="actionbg-border button-cover-9">Get in touch</a>
                                     </div>
                                 </div>
                             </div>
@@ -159,7 +67,7 @@
                                         voluptatem accus antium dolor emque laudantium sunt in culpa qui laborum eu
                                         fugiat nulla.</p> -->
                                         <a href="about.html" class="actionbg button-cover-9">Read More</a>
-                                        <a href="contact.html" class="actionbg-border button-cover-9">Get in touch</a>
+                                        <a href="contact.php" class="actionbg-border button-cover-9">Get in touch</a>
                                     </div>
                                 </div>
                             </div>
@@ -174,7 +82,7 @@
                                         esse cillum dolore eu fugiat nulla pariatur consectetur adipiscing elit eu
                                         fugiat nulla.</p> -->
                                         <a href="about.html" class="actionbg button-cover-9">Read More</a>
-                                        <a href="contact.html" class="actionbg-border button-cover-9">Get in touch</a>
+                                        <a href="contact.php" class="actionbg-border button-cover-9">Get in touch</a>
                                     </div>
                                 </div>
                             </div>
@@ -197,6 +105,7 @@
                 </div>
             </div>
         </section>
+
         <!-- //covers -->
 
         <div class="display-ad" style="margin: 8px auto;display: block;text-align: center;">
@@ -207,7 +116,7 @@
         <section class="w3l-feature-9">
             <div class="main-w3">
                 <div class="wrapper">
-                    <div class="d-flex main-cont-wthree-fea">
+                    <div class="d-flex main-cont-wthree-fea" style="overflow-x: scroll;">
                         <div class="grids-feature">
                             <a href="services.html"> <span class="fa fa-shopping-basket"></span>
                                 <h4><a href="services.html" class="title-head">Exhibitions</a></h4>
@@ -262,9 +171,9 @@
                     <div class="owl-carousel owl-theme text-center">
                         <div class="item shadow">
                             <div class="grids4-info">
-                                <a href="#URL"><img src="assets/images/1.jpeg" class="img-responsive " alt="" /></a>
+                                <a href="gallery.html"><img src="assets/images/1.jpeg" class="img-responsive " alt="" /></a>
                                 <div class="info">
-                                    <h5><a href="#URL">Kasapreko beverage factory</a></h5>
+                                    <h5><a href="gallery.html">Kasapreko beverage factory</a></h5>
                                     <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
                                         quam.
                                     </p>
@@ -273,9 +182,9 @@
                         </div>
                         <div class="item">
                             <div class="grids4-info">
-                                <a href="#URL"><img src="assets/images/2.jpeg" class="img-responsive " alt="" /></a>
+                                <a href="gallery.html"><img src="assets/images/2.jpeg" class="img-responsive " alt="" /></a>
                                 <div class="info">
-                                    <h5><a href="#URL">Water processing factory</a></h5>
+                                    <h5><a href="gallery.html">Water processing factory</a></h5>
                                     <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
                                         quam.
                                     </p>
@@ -284,9 +193,9 @@
                         </div>
                         <div class="item">
                             <div class="grids4-info">
-                                <a href="#URL"><img src="assets/images/bg2.jpeg" class="img-responsive " alt="" /></a>
+                                <a href="gallery.html"><img src="assets/images/bg2.jpeg" class="img-responsive " alt="" /></a>
                                 <div class="info">
-                                    <h5><a href="#URL">Tomato processing factory</a></h5>
+                                    <h5><a href="gallery.html">Tomato processing factory</a></h5>
                                     <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
                                         quam.
                                     </p>
@@ -295,10 +204,9 @@
                         </div>
                         <div class="item">
                             <div class="grids4-info">
-                                <a href="#URL"><img src="assets/images/4c.jpeg" width="700px" class="img-responsive "
-                                        alt="" /></a>
+                                <a href="gallery.html"><img src="assets/images/4c.jpeg" width="700px" class="img-responsive " alt="" /></a>
                                 <div class="info">
-                                    <h5><a href="#URL">Cleaning</a></h5>
+                                    <h5><a href="gallery.html">Cleaning</a></h5>
                                     <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
                                         quam.
                                     </p>
@@ -307,9 +215,9 @@
                         </div>
                         <div class="item">
                             <div class="grids4-info">
-                                <a href="#URL"> <img src="assets/images/bg4c.jpeg" class="img-responsive " alt="" /></a>
+                                <a href="gallery.html"> <img src="assets/images/bg4c.jpeg" class="img-responsive " alt="" /></a>
                                 <div class="info">
-                                    <h5><a href="#URL">House keeping</a></h5>
+                                    <h5><a href="gallery.html">House keeping</a></h5>
                                     <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
                                         quam.
                                     </p>
@@ -318,9 +226,9 @@
                         </div>
                         <div class="item">
                             <div class="grids4-info">
-                                <a href="#URL"><img src="assets/images/18c.jpeg" class="img-responsive " alt="" /></a>
+                                <a href="gallery.html"><img src="assets/images/18c.jpeg" class="img-responsive " alt="" /></a>
                                 <div class="info">
-                                    <h5><a href="#URL">Nose Musk Factory</a></h5>
+                                    <h5><a href="gallery.html">Nose Musk Factory</a></h5>
                                     <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
                                     </p>
                                 </div>
@@ -328,20 +236,9 @@
                         </div>
                         <div class="item">
                             <div class="grids4-info">
-                                <a href="#URL"> <img src="assets/images/8.jpg" class="img-responsive " alt="" /></a>
+                                <a href="gallery.html"> <img src="assets/images/8.jpg" class="img-responsive " alt="" /></a>
                                 <div class="info">
-                                    <h5><a href="#URL">Timber Processing Factory</a></h5>
-                                    <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
-                                        quam.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="grids4-info">
-                                <a href="#URL"> <img src="assets/images/9.jpeg" class="img-responsive " alt="" /></a>
-                                <div class="info">
-                                    <h5><a href="#URL">Yam & Cassava Fatory</a></h5>
+                                    <h5><a href="gallery.html">Timber Processing Factory</a></h5>
                                     <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
                                         quam.
                                     </p>
@@ -350,9 +247,20 @@
                         </div>
                         <div class="item">
                             <div class="grids4-info">
-                                <a href="#URL"> <img src="assets/images/10.jpg" class="img-responsive " alt="" /></a>
+                                <a href="gallery.html"> <img src="assets/images/9.jpeg" class="img-responsive " alt="" /></a>
                                 <div class="info">
-                                    <h5><a href="#URL">Pineapple Process Factory</a></h5>
+                                    <h5><a href="gallery.html">Yam & Cassava Fatory</a></h5>
+                                    <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
+                                        quam.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="grids4-info">
+                                <a href="gallery.html"> <img src="assets/images/10.jpg" class="img-responsive " alt="" /></a>
+                                <div class="info">
+                                    <h5><a href="gallery.html">Pineapple Process Factory</a></h5>
                                     <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
                                         quam.
                                     </p>
@@ -366,34 +274,7 @@
         </section>
         <!-- grids block 4 -->
 
-        <script src="assets/js/jquery-3.3.1.min.js"></script>
-        <script src="assets/js/owl.carousel.js"></script>
-        <script>
-            $(document).ready(function () {
-                $('.owl-carousel').owlCarousel({
-                    loop: true,
-                    margin: 0,
-                    responsiveClass: true,
-                    responsive: {
-                        0: {
-                            items: 1,
-                            nav: true
-                        },
-                        600: {
-                            items: 2,
-                            nav: false,
-                            margin: 20
-                        },
-                        1000: {
-                            items: 3,
-                            nav: true,
-                            loop: true,
-                            margin: 20
-                        }
-                    }
-                })
-            })
-        </script>
+
         <section class="w3l-form-16">
             <!-- /form-16-section -->
             <div class="form-16-mian">
@@ -407,32 +288,43 @@
                                 processing, Garments and textiles, Pharmaceuticals, Components manufacturing, Paper and
                                 paper products, Packaging materials
                             </p>
-                            <a href="contact.html" class="read1">Contact Us</a>
+                            <a href="contact.php" class="read1">Contact Us</a>
                             <a href="jobs.html" class="read2">View offers</a>
                             <!-- <button class="read2">View offers</button> -->
                         </div>
                         <div class="form-right-inf">
                             <div class="form-inner-cont">
                                 <h6>Apply Now<span class="line"></span></h6>
-                                <form action="#" method="post" class="signin-form">
-                                    <div class="d-grid book-form">
-                                        <div class="form-input">
-                                            <input type="text" name="" placeholder="Your Name" required />
+                                <form action="#" method="post" id="jobForm" class="signin-form">
+                                    <div class=" book-form">
+
+                                        <div class="form-input m-2">
+                                            <input type="text" name="name" placeholder="Your Name" required />
                                         </div>
-                                        <div class="form-input">
-                                            <input type="email" name="" placeholder="Email Address" required />
+
+
+                                        <div class="form-input m-2">
+                                            <input type="email" name="email" placeholder="Email Address" required />
                                         </div>
-                                        <div class="form-input">
-                                            <input type="number" name="" placeholder="Contact Number" required />
+
+                                        <div class="form-input m-2">
+                                            <input type="number" name="phone" placeholder="Contact Number" required />
                                         </div>
-                                        <div class="form-input">
-                                            <label for="cv" style="color:white;font-size: 18px;"> <a
-                                                    style="background-color: black;width:100%" class="read1"><i
-                                                        class="fa fa-file-alt"></i> Add letter </a></label>
-                                            <input type="file" name="cv" id="cv" style="display:none">
+
+
+                                        <div >
+                                            <div class="">
+                                                <label for="cv" class=" text-success border rounded p-2 w-40 border-success">  Add letter </label>
+                                            </div>
+
+                                            <div class="form-control">
+                                                <input type="file" name="cv" id="cv" required>
+                                            </div>
                                         </div>
                                     </div>
-                                    <button class="btn">Submit</button>
+                                    <div id="Alert"></div>
+                                    <!-- <input type="submit" value="Submit" class="btn"  > -->
+                                    <button class="btn" id="jobBtn">Submit</button>
                                     <p>Please provide accurate contact info, we will contact you via them, thank you</p>
 
                                 </form>
@@ -463,16 +355,17 @@
                             <div class="card investbox">
                                 <h5 class="heading">Priority Sectors</h5>
                                 <hr style="height: 4px;background-color: rgb(10, 180, 10);">
-                                <ul class="myul">
-                                    <li class=" invest-title">Agricultural processing</li><br>
-                                    <li class=" invest-title">Garments and textiles</li><br>
-                                    <li class="invest-title">Paper and paper products</li><br>
-                                    <li class=" invest-title">Pharmaceuticals</li><br>
-                                    <li class=" invest-title">Components manufacturing</li><br>
-                                    <li class=" invest-title">Packaging materials</li>
+                                <ul class="">
+                                    <li class=" ">Agricultural processing</li><br>
+                                    <li class=" ">Garments and textiles</li><br>
+                                    <li class="">Paper and paper products</li><br>
+                                    <li class=" ">Pharmaceuticals</li><br>
+                                    <li class=" ">Components manufacturing</li><br>
+                                    <li class=" ">Packaging materials</li>
 
                                 </ul>
-                                <button class="investBtn"> Join </button>
+                                <!-- <a href="contact.php" class="text-success btn border border-success btn-sm"></a>  -->
+                                <button class="btn  btn-success " style="width: 100px;"><a href="contact.php" class="text-white">Join</a></button>
                             </div>
                         </div>
 
@@ -480,13 +373,13 @@
                             <div class="">
                                 <h5 class="heading">Financing Option</h5>
                                 <hr style="height: 4px;background-color: rgb(10, 180, 10);">
-                                <ul class="myul">
-                                    <li class=" invest-title ">Self-financing</li><br>
-                                    <li class=" invest-title">Participating financial institutions</li><br>
-                                    <li class=" invest-title"> Partnerships/Joint venture/PPP</li><br>
+                                <ul class="">
+                                    <li class="  ">Self-financing</li><br>
+                                    <li class=" ">Participating financial institutions</li><br>
+                                    <li class=" "> Partnerships/Joint venture/PPP</li><br>
 
                                 </ul>
-                                <button class="investBtn">Invest</button>
+                                <button class="investBtn"><a href="contact.php" class="text-success">Invent</a></button>
                             </div>
                         </div>
                     </div>
@@ -503,9 +396,9 @@
                     <h3 class="heading">Latest news</h3>
                     <div class="d-grid">
                         <div class="grids5-info">
-                            <a href="#URL"><img src="assets/images/31.jpeg" alt="" /></a>
+                            <a href="gallery.html"><img src="assets/images/31.jpeg" alt="" /></a>
                             <div class="blog-info">
-                                <h4><a href="#URL">Replacement, Repairs.</a></h4>
+                                <h4><a href="gallery.html">Replacement, Repairs.</a></h4>
                                 <p>Fusce rutrum quam a ultrices rhoncus. Nulla eu ipsum tempus est et vitae nulla empus
                                     est
                                     suscipit et dolor amet.</p>
@@ -523,9 +416,9 @@
                             </div>
                         </div>
                         <div class="grids5-info">
-                            <a href="#URL"><img src="assets/images/32.jpeg" alt="" /></a>
+                            <a href="gallery.html"><img src="assets/images/32.jpeg" alt="" /></a>
                             <div class="blog-info">
-                                <h4><a href="#URL">Sump and tank cleaning</a></h4>
+                                <h4><a href="gallery.html">Sump and tank cleaning</a></h4>
                                 <p>Fusce rutrum quam a ultrices rhoncus. Nulla eu ipsum tempus est et vita
                                     est
                                     suscipit et dolor amet.</p>
@@ -543,9 +436,9 @@
                             </div>
                         </div>
                         <div class="grids5-info">
-                            <a href="#URL"><img src="assets/images/11.jpeg" alt="" /></a>
+                            <a href="gallery.html"><img src="assets/images/11.jpeg" alt="" /></a>
                             <div class="blog-info">
-                                <h4><a href="#URL">House keeping, cleaning</a></h4>
+                                <h4><a href="gallery.html">House keeping, cleaning</a></h4>
                                 <p>Fusce rutrum quam a ultrices rhoncus. Nulla eu ipsum tempus est et vitae nulla empus
                                     est
                                     suscipit et dolor amet.</p>
@@ -593,69 +486,17 @@
         </section>
         <!-- //form 28 block -->
         <!-- footer-28 block -->
-        <section class="w3l-footer-28-main">
-            <div class="footer-28">
-                <div class="wrapper">
-                    <div class="d-grid grid-col-4 footer-top-28">
-                        <div class="footer-list-28">
-                            <h6 class="footer-title-28">Address Info<span class="line"></span></h6>
-                            <ul>
-                                <li>
-                                    <p><span class="fa fa-user"></span> Commercial Specialist Rita Asante </p>
-                                </li>
-                                <li><a href="tel:+233 (0) 30 274 1715"><span class="fa fa-phone"></span> +233 (0) 30 274
-                                        1715</a>
-                                </li>
-                                <li><a href="#c" class="mail"><span class="fa fa-envelope-open"></span>
-                                        office.accra@trade.gov </a></li>
-                                <li><a href="#c" class="mail"><span class="fa fa-envelope-open"></span>
-                                        mail@company.com</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-list-28">
-                            <h6 class="footer-title-28">Quick Links<span class="line"></span></h6>
-                            <ul>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="portfolio.html">Projects</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-list-28">
-                            <h6 class="footer-title-28">list of Services<span class="line"></span></h6>
-                            <ul class="d-grid footer-column-2">
-                                <li><a href="services-single.html">Home</a></li>
-                                <li><a href="services-single.html">Factories</a></li>
-                                <li><a href="services-single.html">Gallery</a></li>
-                                <li><a href="services-single.html">Advertisement</a></li>
-                                <li><a href="services-single.html">Exhibitions</a></li>
-                                <li><a href="services-single.html">Stakeholders</a></li>
-                                <li><a href="services-single.html">e-coomerce</a></li>
-                                <li><a href="services-single.html">Partners</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-list-28">
-                            <h6 class="footer-title-28">Support<span class="line"></span></h6>
-                            <ul>
-                                <li><a href="#link">Documentation</a></li>
-                                <li><a href="#link">Privacy policy</a></li>
-                                <li><a href="#link">Terms of service</a></li>
-                                <li><a href="#link">24/7 support</a></li>
-                            </ul>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
-            <!-- //footer-28 block -->
-        </section>
-
-
+        <?php require 'footer.php' ?>
         <!-- move top -->
         <button onclick="topFunction()" id="movetop" title="Go to top">
             <span class="fa fa-angle-up"></span>
         </button>
-        <script>
+        <script src="assets/js/jquery-3.5.1.jquery.min.js"></script>
+        <!-- <script src="assets/js/jquery-3.3.1.min.js"></script> -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- <script>
             // When the user scrolls down 20px from the top of the document, show the button
             window.onscroll = function () {
                 scrollFunction()
@@ -674,13 +515,64 @@
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
             }
-        </script>
+        </script> -->
         <!-- /move top -->
 
 
 
         <div id="v-w3layouts"></div>
-        <script>(function (v, d, o, ai) { ai = d.createElement('script'); ai.defer = true; ai.async = true; ai.src = v.location.protocol + o; d.head.appendChild(ai); })(window, document, '../../../../../../../a.vdo.ai/core/v-w3layouts/vdo.ai.js');</script>
+        <!-- <script src="assets/js/jquery-3.3.1.min.js"></script> -->
+        <script src="assets/js/owl.carousel.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 0,
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            nav: true
+                        },
+                        600: {
+                            items: 2,
+                            nav: false,
+                            margin: 20
+                        },
+                        1000: {
+                            items: 3,
+                            nav: true,
+                            loop: true,
+                            margin: 20
+                        }
+                    }
+                })
+            })
+        </script>
+        <script>
+            $("#jobForm").submit(function(e) {
+                e.preventDefault();
+                // alert("Are you sure you want to Upload")
+                // $("#jobBtn").val("Please wait...");
+
+                $.ajax({
+                    url: "assets/php/action.php",
+                    method: "post",
+                    processData: false,
+                    contentType: false,
+                    cache: false,
+                    data: new FormData(this),
+
+
+                    success: function(response) {
+                        console.log(response);
+                        // $("#jobBtn").val("Post");
+                        $("#Alert").html(response);
+
+                    },
+                });
+            });
+        </script>
     </body>
 
 
