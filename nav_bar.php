@@ -1,13 +1,25 @@
+<?php
+// session_start();
+
+require 'assets/php/session_admin.php';
+if (isset($_SESSION['admin'])) {
+  header('location:admin.php');
+}
+
+
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
-  <title>Emergency Reporting App</title>
+  <title></title>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="assets/datatables/datatables.min.css">
+  <link rel="stylesheet" href="assets/css/sweetalert.min.css">
+  <script src="assets/js/sweetalert2.min.js"></script>
   <style>
     /* Style for side navigation */
     .sidenav {
@@ -93,13 +105,14 @@
 </head>
 
 <body>
-  <div class="topnav">
+  <div class="topnav" class="justify-content-between">
     <a onclick="openNav()" href="#nav"><i class="fa fa-bars "></i></a>
     <a class="active" href="#home">Dashboard</a>
     <a href="#news">Post Gallery</a>
     <a href="#contact">Jop Application</a>
     <a href="#about">Contacts</a>
-
+    <a href="create_account.php" class="link-nav">Add User</a>
+    <a href="admin_logout.php" class="link-nav">Logout</a>
   </div>
   <!-- Open button -->
 
@@ -108,7 +121,9 @@
   <div id="mySidenav" class="sidenav">
     <a class="active" href="dashboard.php">Dashboard</a>
     <a href="users.php">Users</a>
-    <a href="#">Exhibitions</a>
+    <a href="customers.php">Customers</a>
+    <a href="all_exhibitions.php">All exhibitions</a>
+    <a href="exhibitions.php">Post exhibitions</a>
     <a href="#">E-commerce</a>
     <a href="#">Post Jobs</a>
     <a href="#news">Post Gallery</a>

@@ -6,7 +6,7 @@ require 'auths.php';
 $cuser = new Authenticates();
 
 
-if(!isset($_SESSION['user'])){
+if(!isset($_SESSION['customer'])){
     header('location:index.php');
     die;
     
@@ -19,10 +19,10 @@ if(!isset($_SESSION['index'])){
 }
 
 
-$cuser_name = $_SESSION['user'];
+$cuser_name = $_SESSION['customer'];
 
 $data = $cuser->currentUsers($cuser_name);
-$cid =$data['id'];
+$cid = $data['id'];
 $cname= $data['full_name'];
 $cuser_name= $data['user_name'];
 $cemail= $data['email'];
@@ -39,7 +39,7 @@ $reg_on = date('d M Y',strtotime($created));
 if(!$data){
    
     unset($_SESSION['user']);
-    header('location:signup.php');
+    header('location:index.php');
 }
 
 ?>

@@ -9,7 +9,7 @@ class Authenticates extends Database
     //Current User In Session
     public function currentUsers($user_name)
     {
-        $sql = "SELECT * FROM  users WHERE user_name =:user_name AND deleted IS NULL";
+        $sql = "SELECT * FROM  user WHERE user_name =:user_name AND deleted IS NULL";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute(['user_name' => $user_name]);
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -17,6 +17,7 @@ class Authenticates extends Database
         return $row;
     }
 
+   
 
     public function user_exist($user_name)
     {
@@ -29,22 +30,24 @@ class Authenticates extends Database
         return $result;
     }
 
-    public function register_user($name, $user_name, $email, $phone, $password)
+    
+  
+
+    public function register_user($name, $user_name,$user_id, $email, $phone, $password)
     {
-        $sql = "INSERT INTO users (full_name,user_name,email,phone,password) VALUES (:full_name,:user_name,:email,:phone,:password)";
+        $sql = "INSERT INTO users (full_name,user_name,user_id,email,phone,password) VALUES (:full_name,:user_name,:user_id,:email,:phone,:password)";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute([
-            'full_name' => $name, 'user_name' => $user_name, 'email' => $email,
+            'full_name' => $name, 'user_name' => $user_name,'user_id'=>$user_id, 'email' => $email,
             'phone' => $phone, 'password' => $password
         ]);
 
         return true;
     }
 
-    //login existing user 
     public function login_user($user_name)
     {
-        $sql = "SELECT user_name,password FROM users WHERE user_name = :user_name";
+        $sql = "SELECT user_name,password FROM users WHERE user_name = :user_name AND deleted IS NULL" ;
         $stmt = $this->conn->prepare($sql);
         $stmt->execute(['user_name' => $user_name]);
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -52,6 +55,7 @@ class Authenticates extends Database
         return $row;
     }
 
+  
 
     public function post_application($email, $name, $phone, $letter)
     {

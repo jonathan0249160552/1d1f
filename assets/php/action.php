@@ -7,9 +7,12 @@ use PHPMailer\PHPMailer\Exception;
 
 
 
-require_once 'auths.php';
-// $user_id_gen = bin2hex(random_bytes(10));
+require 'auths.php';
+$user_id = bin2hex(random_bytes(10));
+
 $user = new Authenticates();
+
+
 if (isset($_POST['action']) && $_POST['action'] == 'customer_register') {
     $name = $user->test_input($_POST['full_name']);
     $user_name = $user->test_input($_POST['user_name']);
@@ -27,7 +30,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'customer_register') {
     } else {
         if (
 
-            $user->register_user($name, $user_name, $email, $phone, $hpass)
+            $user->register_user($name, $user_name,$user_id, $email, $phone, $hpass)
         ) {
 
             echo $user->showMessage('success', 'Registration Successful');
@@ -38,6 +41,8 @@ if (isset($_POST['action']) && $_POST['action'] == 'customer_register') {
         }
     }
 }
+
+
 
 
 
@@ -53,7 +58,8 @@ if (isset($_POST['action']) && $_POST['action'] == 'logging') {
         if (password_verify($pass, $loggedInUser['password'])) {
 
             echo "login";
-            $_SESSION['user'] = $user_name;
+            $_SESSION['customer'] = $user_name;
+            // header('location:../../home.php');
         } else {
             echo $user->showMessage('danger', 'Password is incorrect!');
         }
@@ -61,6 +67,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'logging') {
         echo $user->showMessage('danger', 'User does not exist!');
     }
 }
+
 
 
 if (isset($_POST['action']) && $_POST['action'] == 'contact') {

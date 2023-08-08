@@ -1,11 +1,9 @@
 <?php
 session_start();
 
-if (isset($_SESSION['user'])) {
-	header('location:home.php');
+if (isset($_SESSION['admin'])) {
+	// header('location:dashboard.php');
 }
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,12 +41,12 @@ if (isset($_SESSION['user'])) {
 				<div class="forms-17-form">
 					<div class="form-17-tp">
 						<h6>Login</h6>
-						<form action="#" method="post" id="AdminAdminLoginForm" class="signin-form">
+						<form action="#c" method="post" id="AdminLoginForm" class="signin-form">
 							<div class="form-input">
 								<input type="text" name="user_name" placeholder="Your user name" required />
 							</div>
 							<div class="form-input">
-								<input type="password" name="login_password" placeholder="Your password" required />
+								<input type="password" name="password" placeholder="Your password" required />
 							</div>
 							<div class="forget">
 								<a href="#url" class="forget-pas">Forgot password?</a>
@@ -71,8 +69,9 @@ if (isset($_SESSION['user'])) {
 		</div>
 	</div>
 </section>
+
+<script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/jquery-3.5.1.jquery.min.js"></script>
-<!-- <script src="assets/js/jquery-3.3.1.min.js"></script> -->
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script>
@@ -84,13 +83,18 @@ if (isset($_SESSION['user'])) {
 
 			$("#logInButton").val('Please Wait...');
 			$.ajax({
-				url: 'assets/php/action.php',
+				url: 'assets/php/action_admin.php',
 				method: 'post',
 				data: $("#AdminLoginForm").serialize() + '&action=adminLogin',
 				success: function(response) {
+					if (response === 'login') {
+						window.location = 'dashboard.php';
+						// window.location.reload()
+					
+					} else {
+						$("#loginAlert").html(response);
 
-					$("#logInButton").val('Login');
-                    $("#loginAlert").html(response);
+					}
 				}
 			});
 		}

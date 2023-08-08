@@ -12,95 +12,8 @@
 </head>
 
 <body>
+    <?php require 'header.php'; ?>
 
-
-    <div class="w3l-headers-9">
-        <header>
-            <div class="wrapper">
-                <div class="header">
-
-                    <div>
-                        <h1>
-
-                            <a class="logo" href="index.html">
-                                <img src="assets/images/logo.jpeg" alt="Your logo" title="Your logo"
-                                    style="height:35px;" />
-                            </a>
-                        </h1>
-                    </div>
-                    <div class="bottom-menu-content">
-                        <input type="checkbox" id="nav" />
-                        <label for="nav" class="menu-bar"></label>
-                        <nav>
-                            <ul class="menu">
-                                <li><a href="index.html" class="link-nav">Home</a></li>
-                                <li><a href="about.html" class="link-nav">About</a></li>
-                                <li>
-                                    <!-- First Tier Drop Down -->
-                                    <label for="drop-2" class="toggle toogle-2">Pages <span class="fa fa-caret-down"
-                                            aria-hidden="true"></span></label>
-                                    <a href="#pages" class="link-nav dropdown-toggle">Pages <span
-                                            class="fa fa-caret-down" aria-hidden="true"></span></a>
-                                    <input type="checkbox" id="drop-2" />
-                                    <ul class="first-dropdwon">
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="services-single.html">Services single</a></li>
-                                        <li><a href="team.html">Team Page</a></li>
-                                        <li><a href="team-single.html">Team single</a></li>
-                                        <li><a href="gallery.html">Portfolio</a></li>
-                                        <li><a href="portfolio-single.html">Portfolio Single</a></li>
-                                        <li><a href="timeline.html">Timeline</a></li>
-                                        <li><a href="faq.html">Faq page</a></li>
-                                        <!-- <li><a href="coming-soon.html">Coming Soon</a></li> -->
-                                        <li><a href="error.html">404 - error</a></li>
-                                        <!-- <li><a href="search-results.html">Search Results</a></li>
-                                    <li><a href="email-template.html">Email Template</a></li> -->
-                                    </ul>
-                                </li>
-                                <li>
-                                    <label for="drop-3" class="toggle toogle-2">Blog <span class="fa fa-caret-down"
-                                            aria-hidden="true"></span></label>
-                                    <a href="#blog" class="link-nav dropdown-toggle">Blog <span class="fa fa-caret-down"
-                                            aria-hidden="true"></span></a>
-                                    <input type="checkbox" id="drop-3" />
-                                    <ul>
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="blog-single.html">Blog Single</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <label for="drop-4" class="toggle toogle-2">Profile <span class="fa fa-caret-down"
-                                            aria-hidden="true"></span></label>
-                                    <a href="#shop" class="link-nav dropdown-toggle">Profile <span
-                                            class="fa fa-caret-down" aria-hidden="true"></span></a>
-                                    <input type="checkbox" id="drop-4" />
-                                    <ul>
-                                        <li><a href="login.html">Login</a></li>
-                                        <li><a href="signup.html">Signup</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <label for="drop-5" class="toggle toogle-2">Shop <span class="fa fa-caret-down"
-                                            aria-hidden="true"></span></label>
-                                    <a href="#shop" class="link-nav dropdown-toggle">Shop <span class="fa fa-caret-down"
-                                            aria-hidden="true"></span></a>
-                                    <input type="checkbox" id="drop-5" />
-                                    <ul>
-                                        <li><a href="ecommerce.html">Ecommerce</a></li>
-                                        <li><a href="ecommerce-single.html">Ecommerce Single</a></li>
-                                        <li><a href="ecommerce-cart.html">Ecommerce Cart</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html" class="link-nav">Contact</a></li>
-
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- //header -->
-    </div>
 
     <!-- features-7 -->
     <section class="w3l-features-7">
@@ -108,7 +21,7 @@
             <div class="wrapper">
                 <h5 class="heading" id="jobs" style="margin-top: 30px;">Products & service</h5>
                 <h3 class="heading"> Product</h3>
-                <div class="features-top_sur d-grid">
+                <div class="features-top_sur d-grid showExhibition">
                     <div class="features-top-left_sur">
                         <span class="fa fa-cart-arrow-down"></span>
                         <h4><a href="services-single.html">Food Products</a></h4>
@@ -275,7 +188,7 @@
                                 </div>
                             </div>
                         </div>
-                       
+
 
                         <!-- <div class="d-grid inner-grid-columns">
                             <div style="background:url(assets/images/p13.jpg) ;">
@@ -316,10 +229,8 @@
                             </li>
                             <li><a href="tel:+7-800-999-800"><span class="fa fa-phone"></span> +(21)-255-999-8888</a>
                             </li>
-                            <li><a href="mailto:mail@company.com" class="mail"><span
-                                        class="fa fa-envelope-open-o"></span> mail@company.com</a></li>
-                            <li><a href="mailto:mail@company.com" class="mail"><span
-                                        class="fa fa-envelope-open-o"></span> mail@company.com</a></li>
+                            <li><a href="mailto:mail@company.com" class="mail"><span class="fa fa-envelope-open-o"></span> mail@company.com</a></li>
+                            <li><a href="mailto:mail@company.com" class="mail"><span class="fa fa-envelope-open-o"></span> mail@company.com</a></li>
                         </ul>
                     </div>
                     <div class="footer-list-28">
@@ -362,8 +273,7 @@
                         <a href="#linkedin"><span class="fa fa-linkedin"></a>
                         <a href="#instagram"><span class="fa fa-instagram"></a>
                     </div>
-                    <p class="copy-footer-28">© 2019 Home Service. All rights reserved | Designed by <a
-                            href="https://w3layouts.com/">W3layouts</a></p>
+                    <p class="copy-footer-28">© 2019 Home Service. All rights reserved | Designed by <a href="https://w3layouts.com/">W3layouts</a></p>
                 </div>
             </div>
         </div>
@@ -374,9 +284,12 @@
     <button onclick="topFunction()" id="movetop" title="Go to top">
         <span class="fa fa-angle-up"></span>
     </button>
+    <script src="assets/js/jquery-3.5.1.jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script>
         // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
+        window.onscroll = function() {
             scrollFunction()
         };
 
@@ -394,15 +307,22 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
-    <!-- /move top -->
-
-
-
-    <div id="v-w3layouts"></div>
-    <script>(function (v, d, o, ai) { ai = d.createElement('script'); ai.defer = true; ai.async = true; ai.src = v.location.protocol + o; d.head.appendChild(ai); })(window, document, '../../../../../../../a.vdo.ai/core/v-w3layouts/vdo.ai.js');</script>
+    <script>
+        displayExhibition();
+        //display all note of a user
+        function displayExhibition() {
+            $.ajax({
+                url: 'assets/php/process.php',
+                method: 'post',
+                data: {
+                    action: 'displayExhibition'
+                },
+                success: function(response) {
+                    $(".showExhibition").html(response);;
+                }
+            });
+        }
+    </script>
 </body>
-
-
-<!-- Mirrored from demo.w3layouts.com/demosWTR/Freedom/30-03-2020/home-service-freedom-demo_Free/1435018137/web/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Mar 2022 16:18:48 GMT -->
 
 </html>

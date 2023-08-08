@@ -1,6 +1,6 @@
 <?php
-
-require_once 'assets/php/session.php';
+// session_start();
+require 'assets/php/session.php';
 ?>
 
 <div class="w3l-headers-9">
@@ -82,7 +82,7 @@ require_once 'assets/php/session.php';
                                         </ul>
                                     </li>
                                     <li><a href="contact.html" class="link-nav">Contact</a></li>
-
+                                    
                                 </ul>
                             </nav>
                         </div>
