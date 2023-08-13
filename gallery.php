@@ -1,114 +1,53 @@
-<!---/demosWTR/Freedom/30-03-2020/home-service-freedom-demo_Free/1435018137/web/portfolio.html/demosWTR/Freedom/30-03-2020/home-service-freedom-demo_Free/1435018137/web/index.htmlArrayEdit status----><!---/demosWTR/Freedom/30-03-2020/home-service-freedom-demo_Free/1435018137/web/index.htmlselect product_id,template_id,template_title,template_name,featured_image,featured_image_server_id,
-full_image_server_id,full_image from template_down_details where starter_demo_url='/demosWTR/Freedom/30-03-2020/home-service-freedom-demo_Free/1435018137/web/index.html' lat part:portfolio.html---><!--
-Author: W3layouts
-Author URL: http://w3layouts.com
--->
+
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- Mirrored from demo.w3layouts.com/demosWTR/Freedom/30-03-2020/home-service-freedom-demo_Free/1435018137/web/portfolio.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Mar 2022 16:19:23 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="gallery_viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="assets/css/style-freedom.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 
 <body>
 
+<div class="modal card fade" id="GalleryModal" style="background-color:rgba(0, 0, 0, 0);">
+    <div class="modal-dialog modal-lg  modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="">
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" style="background-color: #f9351b;">x</button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <h4 class="  p-2 text-center font-weight-bold ">Details</h4>
 
+          <div class="card-deck">
+            <div class="card m-2 ">
+              <div class="card-body ">
+                
+                  <div class="form-group displayDetails">
+                        <h5>No details available</h5>
+                  </div>
+
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
         <!-- header -->
         <div class="w3l-headers-9">
-            <header>
-                <div class="wrapper">
-                    <div class="header">
-
-                        <div>
-                            <h1>
-                                <a href="index.html" class="logo">Home <span>Service</span></a>
-                                <!-- if logo is image enable this   
-          <a class="logo" href="index.html">
-            <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-          </a> -->
-                            </h1>
-                        </div>
-                        <div class="bottom-menu-content">
-                            <input type="checkbox" id="nav" />
-                            <label for="nav" class="menu-bar"></label>
-                            <nav>
-                                <ul class="menu">
-                                    <li><a href="index.html" class="link-nav">Home</a></li>
-                                    <li><a href="about.html" class="link-nav">About</a></li>
-                                    <li>
-                                        <!-- First Tier Drop Down -->
-                                        <label for="drop-2" class="toggle toogle-2">Pages <span class="fa fa-caret-down"
-                                                aria-hidden="true"></span></label>
-                                        <a href="#pages" class="link-nav dropdown-toggle">Pages <span
-                                                class="fa fa-caret-down" aria-hidden="true"></span></a>
-                                        <input type="checkbox" id="drop-2" />
-                                        <ul class="first-dropdwon">
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="services-single.html">Services single</a></li>
-                                            <li><a href="team.html">Team Page</a></li>
-                                            <li><a href="team-single.html">Team single</a></li>
-                                            <li><a href="portfolio.html">Portfolio</a></li>
-                                            <li><a href="portfolio-single.html">Portfolio Single</a></li>
-                                            <li><a href="timeline.html">Timeline</a></li>
-                                            <li><a href="faq.html">Faq page</a></li>
-                                            <li><a href="coming-soon.html">Coming Soon</a></li>
-                                            <li><a href="error.html">404 - error</a></li>
-                                            <li><a href="search-results.html">Search Results</a></li>
-                                            <li><a href="email-template.html">Email Template</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <label for="drop-3" class="toggle toogle-2">Blog <span class="fa fa-caret-down"
-                                                aria-hidden="true"></span></label>
-                                        <a href="#blog" class="link-nav dropdown-toggle">Blog <span
-                                                class="fa fa-caret-down" aria-hidden="true"></span></a>
-                                        <input type="checkbox" id="drop-3" />
-                                        <ul>
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-single.html">Blog Single</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <label for="drop-4" class="toggle toogle-2">Profile <span
-                                                class="fa fa-caret-down" aria-hidden="true"></span></label>
-                                        <a href="#shop" class="link-nav dropdown-toggle">Profile <span
-                                                class="fa fa-caret-down" aria-hidden="true"></span></a>
-                                        <input type="checkbox" id="drop-4" />
-                                        <ul>
-                                            <li><a href="login.html">Login</a></li>
-                                            <li><a href="signup.html">Signup</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <label for="drop-5" class="toggle toogle-2">Shop <span class="fa fa-caret-down"
-                                                aria-hidden="true"></span></label>
-                                        <a href="#shop" class="link-nav dropdown-toggle">Shop <span
-                                                class="fa fa-caret-down" aria-hidden="true"></span></a>
-                                        <input type="checkbox" id="drop-5" />
-                                        <ul>
-                                            <li><a href="ecommerce.html">Ecommerce</a></li>
-                                            <li><a href="ecommerce-single.html">Ecommerce Single</a></li>
-                                            <li><a href="ecommerce-cart.html">Ecommerce Cart</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html" class="link-nav">Contact</a></li>
-
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <!-- //header -->
+            <?php require 'header.php'?>
         </div>
         <section class="w3l-inner-banner">
             <div class="wrapper">
@@ -132,69 +71,69 @@ Author URL: http://w3layouts.com
                     <input id="tab4" type="radio" name="tabs">
                     <label class="tabtle" for="tab4">4</label>
 
-                    <section id="content1" class="tab-content">
-                        <div class="d-grid grid-col-4">
+                    <section id="content1" class="tab-content ">
+                        <div class="d-grid grid-col-4 showGallery">
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/8.webp" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/8.webp" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html" class="text">Maintenance</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal" data-toggle="modal" data-target="#GalleryModal" class="text">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/9.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/9.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Maintenance</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"> <img src="assets/images/10.jpg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"> <img src="assets/images/10.jpg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Maintenance</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"> <img src="assets/images/11.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"> <img src="assets/images/11.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Maintenance</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/12.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/12.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Maintenance</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/13.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/13.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Maintenance</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal" >Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"> <img src="assets/images/13.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"> <img src="assets/images/13.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Maintenance</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"> <img src="assets/images/building.jpg"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"> <img src="assets/images/building.jpg"
                                         class="img-responsive" alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Maintenance</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/15.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/15.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html" class="text">Maintenance</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal" class="text">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -203,73 +142,73 @@ Author URL: http://w3layouts.com
                     <section id="content2" class="tab-content">
                         <div class="d-grid grid-col-4">
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/16.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/16.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Electrical Repair</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/bg3.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/bg3.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Electrical Repair</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"> <img src="assets/images/18.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"> <img src="assets/images/18.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Electrical Repair</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"> <img src="assets/images/19.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"> <img src="assets/images/19.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Electrical Repair</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/20.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/20.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Electrical Repair</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/21.jpg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/21.jpg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Electrical Repair</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/22.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/22.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Electrical Repair</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/23.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/23.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Electrical Repair</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/24.jpg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/24.jpg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Electrical Repair</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <!-- <div class="product">
-                            <a href="portfolio-single.html"><img src="assets/images/21.jpg"
+                            <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/21.jpg"
                                     class="img-responsive" alt="" /></a>
                             <div class="product-details text-center">
-                                <a href="portfolio-single.html">Electrical Repair</a>
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                             </div>
                         </div> -->
 
@@ -279,45 +218,45 @@ Author URL: http://w3layouts.com
                     <section id="content3" class="tab-content">
                         <div class="d-grid grid-col-4">
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/22.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/22.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Painting</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/23.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/23.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Painting</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"> <img src="assets/images/24.jpg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"> <img src="assets/images/24.jpg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Painting</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"> <img src="assets/images/33.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"> <img src="assets/images/33.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Painting</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/26.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/26.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Painting</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/27.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/27.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Painting</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -326,75 +265,75 @@ Author URL: http://w3layouts.com
                     <section id="content4" class="tab-content">
                         <div class="d-grid grid-col-4">
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/28.jpg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/28.jpg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Home Service</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/29.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/29.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Home Service</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"> <img src="assets/images/30.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"> <img src="assets/images/30.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Home Service</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"> <img src="assets/images/31.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"> <img src="assets/images/31.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Home Service</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/32.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/32.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Home Service</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"> <img src="assets/images/38.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"> <img src="assets/images/38.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Home Service</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
 
                             <!-- <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/bg2.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/bg2.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Electrical Repair</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div> -->
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/6.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/6.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Electrical Repair</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
 
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/43.jpeg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/43.jpeg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Electrical Repair</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                             <div class="product">
-                                <a href="portfolio-single.html"><img src="assets/images/44.jpg" class="img-responsive"
+                                <a href="#c" data-toggle="modal"  data-target="#GalleryModal"><img src="assets/images/44.jpg" class="img-responsive"
                                         alt="" /></a>
                                 <div class="product-details text-center">
-                                    <a href="portfolio-single.html">Electrical Repair</a>
+                                    <a href="#c" data-toggle="modal"  data-target="#GalleryModal">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -419,7 +358,7 @@ Author URL: http://w3layouts.com
                             <h6 class="footer-title-28">Address Info<span class="line"></span></h6>
                             <ul>
                                 <li>
-                                    <p><span class="fa fa-map-marker"></span> Home maintenance, #32841 block, home
+                                    <p><span class="fa fa-map-marker"></span> Home Read more, #32841 block, home
                                         repairs,
                                         USA.</p>
                                 </li>
@@ -447,7 +386,7 @@ Author URL: http://w3layouts.com
                                 <li><a href="services-single.html">Plumbing</a></li>
                                 <li><a href="services-single.html">Carpenter</a></li>
                                 <li><a href="services-single.html">Electrician</a></li>
-                                <li><a href="services-single.html">Wall painting</a></li>
+                                <li><a href="services-single.html">Wall Read more</a></li>
                                 <li><a href="services-single.html">Furniture moving</a></li>
                                 <li><a href="services-single.html">House Cleaning</a></li>
                                 <li><a href="services-single.html">Replacing wires</a></li>
@@ -472,7 +411,7 @@ Author URL: http://w3layouts.com
                             <a href="#linkedin"><span class="fa fa-linkedin"></a>
                             <a href="#instagram"><span class="fa fa-instagram"></a>
                         </div>
-                        <p class="copy-footer-28">© 2019 Home Service. All rights reserved | Designed by <a
+                        <p class="copy-footer-28">© 2019 Read more. All rights reserved | Designed by <a
                                 href="https://w3layouts.com/">W3layouts</a></p>
                     </div>
                 </div>
@@ -508,11 +447,69 @@ Author URL: http://w3layouts.com
 
 
 
-        <div id="v-w3layouts"></div>
-        <script>(function (v, d, o, ai) { ai = d.createElement('script'); ai.defer = true; ai.async = true; ai.src = v.location.protocol + o; d.head.appendChild(ai); })(window, document, '../../../../../../../a.vdo.ai/core/v-w3layouts/vdo.ai.js');</script>
+  <!-- //footer-28 block -->
+  <script src="assets/js/jquery-3.5.1.jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- move top -->
+  <button onclick="topFunction()" id="movetop" title="Go to top">
+    <span class="fa fa-angle-up"></span>
+  </button>
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <script>
+    displayGallery();
+    //display all note of a user
+    function displayGallery() {
+      $.ajax({
+        url: 'admin/assets/php/process.php',
+        method: 'post',
+        data: {
+          action: 'displayGallery'
+        },
+        success: function(response) {
+          $(".showGallery").html(response);;
+        }
+      });
+    }
+
+    $('body').on("click", ".more", function(e) {
+      gallery_view = $(this).attr('id');
+      $.ajax({
+        url: 'admin/assets/php/process.php',
+        method: 'post',
+        data: {
+          gallery_view: gallery_view
+        },
+        success: function(response) {
+          console.log(response)
+          $('.displayDetails').html(response);
+
+        }
+      });
+
+    })
+  </script>
     </body>
 
-
-    <!-- Mirrored from demo.w3layouts.com/demosWTR/Freedom/30-03-2020/home-service-freedom-demo_Free/1435018137/web/portfolio.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Mar 2022 16:19:26 GMT -->
 
 </html>

@@ -312,7 +312,7 @@
         //display all note of a user
         function displayExhibition() {
             $.ajax({
-                url: 'assets/php/process.php',
+                url: 'admin/assets/php/process.php',
                 method: 'post',
                 data: {
                     action: 'displayExhibition'

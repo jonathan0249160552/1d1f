@@ -35,6 +35,16 @@ class Authenticates extends Database
         return $row;
     }
 
+    public function allApplication()
+    {
+        $sql = "SELECT * FROM  job_applicants WHERE  deleted IS NULL";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        return $row;
+    }
+
     public function allExhibition()
     {
         $sql = "SELECT * FROM  exhibition WHERE  deleted IS NULL";
@@ -44,6 +54,72 @@ class Authenticates extends Database
 
         return $row;
     }
+
+    public function allGallery()
+    {
+        $sql = "SELECT * FROM  gallery WHERE  deleted IS NULL";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        return $row;
+    }
+
+    public function allContact()
+    {
+        $sql = "SELECT * FROM  contact WHERE  deleted IS NULL";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        return $row;
+    }
+
+    public function allGalleryDetails($val)
+    {
+        $sql = "SELECT * FROM  gallery WHERE id=$val AND deleted IS NULL";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        return $row;
+    }
+
+
+
+
+    public function allJob()
+    {
+        $sql = "SELECT * FROM  job WHERE  deleted IS NULL";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        return $row;
+    }
+
+    public function allJobDetails($val)
+    {
+        $sql = "SELECT * FROM  job WHERE id=$val AND  deleted IS NULL";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        return $row;
+    }
+
+    
+    public function allBlog()
+    {
+        $sql = "SELECT * FROM  blog WHERE   deleted IS NULL";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        return $row;
+    }
+
+
 
     public function user_admin_exist($user_name)
     {
@@ -79,6 +155,8 @@ class Authenticates extends Database
         return $row;
     }
 
+    
+
     public function imageToDatabase($company_name, $type, $picture)
     {
         $sql = "INSERT INTO exhibition (company_name,picture,type) VALUES (:company_name,:picture,:type)";
@@ -89,6 +167,41 @@ class Authenticates extends Database
 
         return true;
     }
+
+    public function postBlog($title, $content, $picture)
+    {
+        $sql = "INSERT INTO blog (title,content,picture) VALUES (:title,:content,:picture)";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute([
+            'title' => $title, 'content' => $content, 'picture' => $picture
+        ]);
+
+        return true;
+    }
+
+    public function postJob($company_name, $title, $des, $email, $contact, $pic)
+    {
+        $sql = "INSERT INTO job (company_name,job_title,job_des,email,contact,pic) VALUES (:company_name,:job_title,:job_des,:email,:contact,:pic)";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute([
+            'company_name' => $company_name, 'job_title' => $title, 'job_des' => $des, 'email' => $email, 'contact' => $contact, 'pic' => $pic
+        ]);
+
+        return true;
+    }
+
+    public function postGallery($title, $content,$pic)
+    {
+        $sql = "INSERT INTO gallery (title,text,pic) VALUES (:title,:text,:pic)";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute([
+            'title' => $title, 'text' => $content, 'pic' => $pic
+        ]);
+
+        return true;
+    }
+
+
 
 
     public function deleteUser($id)
@@ -118,9 +231,33 @@ class Authenticates extends Database
         return true;
     }
 
+    public function deleteJob($id)
+    {
+        $sql = "UPDATE  job set deleted = 1  WHERE id= $id";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+
+        return true;
+    }
+
+    public function deleteGallery($id)
+    {
+        $sql = "UPDATE  gallery set deleted = 1  WHERE id= $id";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+
+        return true;
+    }
+
+    public function deleteApplication($id)
+    {
+        $sql = "UPDATE  job_applicants set deleted = 1  WHERE id= $id";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+
+        return true;
+    }
 
 
-
-
-
+    
 }

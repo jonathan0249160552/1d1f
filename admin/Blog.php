@@ -13,16 +13,12 @@
     <div class="container">
         <div class="card m-4 p-4 alert-success">
         <div class="form-group">
-            <form action="#" method="post" id="job_form">
-                <input type="text" name="company_name" placeholder="company name" class="form-control" id=""> <br>
-                <label for="">Brief Job Description</label>
-                <textarea name="jobDescription" class="form-control" id="" cols="30" rows="10" required></textarea>
-
-                <input type="text" name="jobTitle" class="form-control" id="" placeholder="job title" required>
-              
-                <input type="number" name="contact" id="" placeholder="contact" class="form-control">
-                <input type="email" name="email" id="" placeholder="email" class="form-control">
-                <input type="file" class="form-control" name="jobImage" id="" required accept=".pdf">
+            <form action="#" method="post" id="blog_form">
+                <label for="">Title</label>
+                <input type="text" name="title" class="form-control" id="">
+                <label for="">Content</label>
+                <textarea name="blogContent" class="form-control" id="" cols="30" rows="10" required></textarea>
+                <input type="file" class="form-control" name="blogImage" id="" required>
                 <div class="Alert"></div>
                 <input type="submit" class="btn btn-primary m-2" value="Post" >
                 
@@ -37,7 +33,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script>
-        $("#job_form").submit(function(e) {
+        $("#blog_form").submit(function(e) {
             e.preventDefault();
             // alert("Are you sure you want to Upload")
             $("#post").val("Please wait...");

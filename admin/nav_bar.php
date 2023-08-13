@@ -118,24 +118,20 @@ require 'assets/php/session_admin.php';
     <a href="all_exhibitions.php">All exhibitions</a>
     <a href="exhibitions.php">Post exhibitions</a>
     <a href="#">E-commerce</a>
-    <a href="#">Post Jobs</a>
-    <a href="#news">Post Gallery</a>
-    <a href="#contact">Jop Application</a>
-    <a href="#about">Contacts</a>
-    <a href="#">Blog Posts</a>
+    <a href="post_job.php">Post Jobs</a>
+    <a href="all_jobs.php">Posted Jobs</a>
+    <a href="all_gallery.php">Posted Galleries</a>
+    <a href="post_gallery.php">Post Gallery</a>
+    <a href="applications.php">Jop Applications</a>
+    <a href="contact.php">Contacts</a>
+    <a href="Blog.php">Blog</a>
     <a href="#">Charts</a>
     <a href="account.php">Account</a>
     <a href="#">Logout</a>
     <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">&times;</a>
   </div>
 
-  <!-- Page content -->
-  <div class="container p-4 m-4 justify-content-center">
-
-
-  </div>
   <script src="assets/js/jquery-3.5.1.jquery.min.js"></script>
-  <!-- <script src="assets/js/jquery-3.3.1.min.js"></script> -->
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/datatables/datatables.min.js"></script>

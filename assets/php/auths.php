@@ -9,7 +9,7 @@ class Authenticates extends Database
     //Current User In Session
     public function currentUsers($user_name)
     {
-        $sql = "SELECT * FROM  user WHERE user_name =:user_name AND deleted IS NULL";
+        $sql = "SELECT * FROM  users WHERE user_name =:user_name AND deleted IS NULL";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute(['user_name' => $user_name]);
         $row = $stmt->fetch(PDO::FETCH_ASSOC);

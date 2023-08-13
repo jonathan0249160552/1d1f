@@ -8,48 +8,6 @@
   <title>Document</title>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-  <style>
-    @media (max-width: 850px) {
-
-
-      .mySearch {
-        margin-top: 6px;
-      }
-    }
-
-    @media (max-width: 280px) {
-
-      .searchBox {
-        width: 150px;
-      }
-
-    }
-
-    .searchBox {
-      width: 230px;
-    }
-
-
-    @media (max-width: 850px) {
-      .logo {
-        float: right;
-      }
-    }
-
-    @media (min-width: 850px) {
-      .myNav {
-        display: flex;
-      }
-    }
-
-    .myNav {
-      justify-content: space-between;
-      /* position: fixed; */
-      width: 100%;
-      z-index: 100;
-    }
-  </style>
-
 </head>
 
 <body>
@@ -57,7 +15,7 @@
   <?php require 'nav_bar.php'; ?>
 
   <div style="margin-top: 40px;padding-bottom:40px;" class="card-body">
-    <div class="toolbar showUsers">
+    <div class="table-responsive showUsers">
 
     </div>
 

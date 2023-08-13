@@ -380,7 +380,7 @@
                                     <li class=" "> Partnerships/Joint venture/PPP</li><br>
 
                                 </ul>
-                                <button class="investBtn"><a href="contact.php" class="text-success">Invent</a></button>
+                                <button class="investBtn"><a href="contact.php" class="text-success">Invest</a></button>
                             </div>
                         </div>
                     </div>
@@ -395,7 +395,7 @@
                 <div class="wrapper">
                     <h5 class="heading">Our blog</h5>
                     <h3 class="heading">Latest news</h3>
-                    <div class="d-grid">
+                    <div class="d-grid displayBlog">
                         <div class="grids5-info">
                             <a href="gallery.html"><img src="assets/images/31.jpeg" alt="" /></a>
                             <div class="blog-info">
@@ -497,28 +497,7 @@
         <!-- <script src="assets/js/jquery-3.3.1.min.js"></script> -->
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <!-- <script>
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function () {
-                scrollFunction()
-            };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.getElementById("movetop").style.display = "block";
-                } else {
-                    document.getElementById("movetop").style.display = "none";
-                }
-            }
-
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-        </script> -->
-        <!-- /move top -->
-
+      
 
 
         <div id="v-w3layouts"></div>
@@ -573,6 +552,25 @@
                     },
                 });
             });
+
+            dispalyBlog();
+      //display all note of a user
+      function dispalyBlog() {
+        $.ajax({
+          url: 'admin/assets/php/process.php',
+          method: 'post',
+          data: {
+            action: 'displayBlog'
+          },
+          success: function(response) {
+            $(".displayBlog").html(response);
+            // console.log(response);
+            // $("table").DataTable({
+            // order:[0,'desc']
+            // });
+          }
+        });
+      }
         </script>
     </body>
 

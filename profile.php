@@ -12,7 +12,7 @@
 <body>
     <div>
         <?php
-        // require 'header.php';
+        require 'header.php';
 
         ?>
     </div>

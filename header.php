@@ -11,7 +11,7 @@ require 'assets/php/session.php';
                         <div>
                             <h1>
 
-                                <a class="logo" href="index.html">
+                                <a class="logo" href="index.php">
                                     <img src="assets/images/logo.jpeg" alt="Your logo" title="Your logo"
                                         style="height:35px;" />
                                 </a>
@@ -23,7 +23,7 @@ require 'assets/php/session.php';
                             <nav>
                                 <ul class="menu">
                                     <li><a href="home.php" class="link-nav">Home</a></li>
-                                    <li><a href="about.html" class="link-nav">About</a></li>
+                                    <li><a href="about.php" class="link-nav">About</a></li>
                                     <li>
                                         <!-- First Tier Drop Down -->
                                         <label for="drop-2" class="toggle toogle-2">Pages <span class="fa fa-caret-down"
@@ -32,19 +32,19 @@ require 'assets/php/session.php';
                                                 class="fa fa-caret-down" aria-hidden="true"></span></a>
                                         <input type="checkbox" id="drop-2" />
                                         <ul class="first-dropdwon">
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="jobs.html">Jobs</a></li>
-                                            <li><a href="services-single.html">About IDIF</a></li>
-                                            <li><a href="team.html">Team Page</a></li>
-                                            <!-- <li><a href="team-single.html">Team single</a></li> -->
-                                            <li><a href="gallery.html">Gallery</a></li>
-                                            <!-- <li><a href="portfolio-single.html">Portfolio Single</a></li> -->
-                                            <li><a href="timeline.html">Timeline</a></li>
-                                            <li><a href="faq.html">Faq page</a></li>
-                                            <!-- <li><a href="coming-soon.html">Coming Soon</a></li> -->
-                                            <li><a href="error.html">404 - error</a></li>
-                                            <!-- <li><a href="search-results.html">Search Results</a></li>
-                                            <li><a href="email-template.html">Email Template</a></li> -->
+                                            <li><a href="services.php">Services</a></li>
+                                            <li><a href="jobs.php">Jobs</a></li>
+                                            <li><a href="services-single.php">About IDIF</a></li>
+                                            <li><a href="team.php">Team Page</a></li>
+                                            <!-- <li><a href="team-single.php">Team single</a></li> -->
+                                            <li><a href="gallery.php">Gallery</a></li>
+                                            <!-- <li><a href="portfolio-single.php">Portfolio Single</a></li> -->
+                                            <li><a href="timeline.php">Timeline</a></li>
+                                            <li><a href="faq.php">Faq page</a></li>
+                                            <!-- <li><a href="coming-soon.php">Coming Soon</a></li> -->
+                                            <li><a href="error.php">404 - error</a></li>
+                                            <!-- <li><a href="search-results.php">Search Results</a></li>
+                                            <li><a href="email-template.php">Email Template</a></li> -->
                                         </ul>
                                     </li>
                                     <li>
@@ -54,8 +54,8 @@ require 'assets/php/session.php';
                                                 class="fa fa-caret-down" aria-hidden="true"></span></a>
                                         <input type="checkbox" id="drop-3" />
                                         <ul>
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-single.html">Blog Single</a></li>
+                                            <li><a href="blog.php">Blog</a></li>
+                                            <li><a href="blog-single.php">Blog Single</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -76,12 +76,12 @@ require 'assets/php/session.php';
                                                 class="fa fa-caret-down" aria-hidden="true"></span></a>
                                         <input type="checkbox" id="drop-5" />
                                         <ul>
-                                            <li><a href="ecommerce.html">Ecommerce</a></li>
-                                            <li><a href="ecommerce-single.html">Ecommerce Single</a></li>
-                                            <li><a href="ecommerce-cart.html">Ecommerce Cart</a></li>
+                                            <li><a href="ecommerce.php">Ecommerce</a></li>
+                                            <li><a href="ecommerce-single.php">Ecommerce Single</a></li>
+                                            <li><a href="ecommerce-cart.php">Ecommerce Cart</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html" class="link-nav">Contact</a></li>
+                                    <li><a href="contact.php" class="link-nav">Contact</a></li>
                                     
                                 </ul>
                             </nav>

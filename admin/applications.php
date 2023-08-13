@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +9,47 @@
   <title>Document</title>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
+  <style>
+    @media (max-width: 850px) {
+
+
+      .mySearch {
+        margin-top: 6px;
+      }
+    }
+
+    @media (max-width: 280px) {
+
+      .searchBox {
+        width: 150px;
+      }
+
+    }
+
+    .searchBox {
+      width: 230px;
+    }
+
+
+    @media (max-width: 850px) {
+      .logo {
+        float: right;
+      }
+    }
+
+    @media (min-width: 850px) {
+      .myNav {
+        display: flex;
+      }
+    }
+
+    .myNav {
+      justify-content: space-between;
+      /* position: fixed; */
+      width: 100%;
+      z-index: 100;
+    }
+  </style>
 
 </head>
 
@@ -15,8 +57,8 @@
 
   <?php require 'nav_bar.php'; ?>
 
-  <div class="card-body">
-    <div class="toolbar table-responsive showUsers">
+  <div style="margin-top: 40px;padding-bottom:40px;" class="card-body">
+    <div class="toolbar table-responsive displayApplication">
 
     </div>
 
@@ -30,36 +72,30 @@
   <script src="assets/js/bootstrap.bundle.min.js"></script>
 
 
- 
   <script>
     $(document).ready(function() {
-      displayUsers();
+      displayApplication();
       //display all note of a user
-      function displayUsers() {
+      function displayApplication() {
         $.ajax({
           url: 'assets/php/process.php',
           method: 'post',
           data: {
-            action: 'displayUsers'
+            action: 'displayApplication'
           },
           success: function(response) {
-            $(".showUsers").html(response);
-            // console.log(response);
-            // $("table").DataTable({
-            // order:[0,'desc']
-            // });
+            $(".displayApplication").html(response);
+
           }
         });
       }
 
-
-
       $('body').on("click", ".deleteBtn", function(e) {
-        del_id = $(this).attr('id');
+        del_applicant = $(this).attr('id');
         Swal.fire({
           title: 'Are you sure you want to delete?',
           text: "",
-        
+
           showCancelButton: true,
           confirmButtonColor: '#b12828',
           cancelButtonColor: '#282ab1',
@@ -70,7 +106,7 @@
               url: 'assets/php/process.php',
               method: 'post',
               data: {
-                del_id: del_id
+                del_applicant: del_applicant
               },
               success: function(response) {
                 Swal.fire({
@@ -86,9 +122,7 @@
         })
 
 
-
       });
-
 
     })
   </script>

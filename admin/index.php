@@ -59,7 +59,7 @@ if (isset($_SESSION['admin'])) {
 							</div>
 							<div  class="bottom-login">
 								
-								<p>Are you an admin? <a href="index.php">Go back</a></p>
+								<p>Are you an admin? <a href="../index.php">Go back</a></p>
 							</div>
 						</form>
 					</div>
@@ -89,11 +89,12 @@ if (isset($_SESSION['admin'])) {
 				success: function(response) {
 					if (response === 'login') {
 						window.location = 'dashboard.php';
-						// window.location.reload()
+						$("#logInButton").val('Login');
 					
 					} else {
 						$("#loginAlert").html(response);
 
+						$("#logInButton").val('Login');
 					}
 				}
 			});
