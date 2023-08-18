@@ -1,4 +1,5 @@
 <?php
+// session_start();
 require 'assets/php/session_admin.php';
 ?>
 <!DOCTYPE html>
@@ -117,7 +118,7 @@ require 'assets/php/session_admin.php';
     <a href="customers.php">Customers</a>
     <a href="all_exhibitions.php">All exhibitions</a>
     <a href="exhibitions.php">Post exhibitions</a>
-    <a href="#">E-commerce</a>
+    <a href="post_products.php">Post products</a>
     <a href="post_job.php">Post Jobs</a>
     <a href="all_jobs.php">Posted Jobs</a>
     <a href="all_gallery.php">Posted Galleries</a>
@@ -125,7 +126,8 @@ require 'assets/php/session_admin.php';
     <a href="applications.php">Jop Applications</a>
     <a href="contact.php">Contacts</a>
     <a href="Blog.php">Blog</a>
-    <a href="#">Charts</a>
+    <a href="all_posts.php">All blog post</a>
+    <a href="Charts.php">Charts</a>
     <a href="account.php">Account</a>
     <a href="#">Logout</a>
     <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">&times;</a>

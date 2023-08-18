@@ -1,4 +1,3 @@
-
 <?php
 require 'auths_admin.php';
 
@@ -8,7 +7,7 @@ $x_user = new Authenticates();
 if (isset($_POST['action']) && $_POST['action'] == 'displayAllJobs') {
 	$output = '';
 	$data = $x_user->allJob();
-	
+
 	if ($data) {
 		$output .= '<table class="table  table-bordered text-center  ">
 		<thead>
@@ -322,6 +321,55 @@ if (isset($_POST['action']) && $_POST['action'] == 'displayAllContact') {
 }
 
 
+
+if (isset($_POST['action']) && $_POST['action'] == 'displayAllPost') {
+	$output = '';
+	$data = $x_user->allBlog();
+	$path2 = 'assets/php/imagesuploadedf/';
+	if ($data) {
+		$output .= '<table class="table table-striped table-bordered text-center  ">
+		<thead>
+			<tr>
+				<th>Action</th>
+				<th>Title</th>
+				<th>Content</th>	
+				<th>Picture</th>
+				
+				<th>Posted on</th>
+			
+			
+			</tr>
+		</thead>
+		<tbody>';
+		foreach ($data as $row) {
+
+			$output .= '<tr>
+			<td> <button class="btn text-danger deleteBtn" type="button" id="' . $row['id'] . '">
+			<span class="glyphicon glyphicon-trash"></span> Delete</button></td>
+		
+			<td>' . $row['title'] . '</td>
+			<td>' . $row['content'] . '</td>
+			<td><img src="assets/php/media/' . $row['picture'] . '" width="100px" class="img-responsive"
+			alt="" /></td>
+			
+			
+			<td>' . $x_user->timeInAgo($row['posted_on']) . '</td>
+			
+			
+		
+		</tr>';
+		}
+		$output .= '</tbody>
+					</table>';
+
+		echo $output;
+	} else {
+		echo '<h4 class="text-center text-muted">:No posts yet </h4>';
+	}
+}
+
+
+
 if (isset($_POST['action']) && $_POST['action'] == 'displayExhibition') {
 	$output = '';
 	$data = $x_user->allExhibition();
@@ -358,10 +406,10 @@ if (isset($_POST['action']) && $_POST['action'] == 'displayGallery') {
 		foreach ($data as $row) {
 
 			$output .= '  <div class="product">
-			<a href="portfolio-single.html"><img src="admin/assets/php/media/'.$row['pic'].'" class="img-responsive"
+			<a href="portfolio-single.html"><img src="admin/assets/php/media/' . $row['pic'] . '" class="img-responsive"
 					alt="" /></a>
 			<div class="product-details text-center">
-				<a href="#c" data-toggle="modal" id="'.$row['id'].'" data-target="#GalleryModal" class="text more">Read more</a>
+				<a href="#c" data-toggle="modal" id="' . $row['id'] . '" data-target="#GalleryModal" class="text more">Read more</a>
 			</div>
 		
 		</div>';
@@ -415,13 +463,13 @@ if (isset($_POST['action']) && $_POST['action'] == 'displayBlog') {
 
 			$output .= '    
 			<div class="grids5-info">
-				<a href="gallery.html"><img src="admin/assets/php/media/'.$row['picture'].'" alt="" /></a>
+				<a href="gallery.html"><img src="admin/assets/php/media/' . $row['picture'] . '" alt="" /></a>
 				<div class="blog-info">
-					<h4><a href="#c">'.$row['title'].'</a></h4>
-					<p>'.$row['content'].'</p>
+					<h4><a href="#c">' . $row['title'] . '</a></h4>
+					<p>' . $row['content'] . '</p>
 					<ul class="blog-list">
 						<li>
-							<p><span class="fa fa-clock-o"></span> '.$x_user->timeInAgo($row['posted_on']).'</p>
+							<p><span class="fa fa-clock-o"></span> ' . $x_user->timeInAgo($row['posted_on']) . '</p>
 						</li>
 						<li>
 							
@@ -440,8 +488,6 @@ if (isset($_POST['action']) && $_POST['action'] == 'displayBlog') {
 		echo '<h4 class="text-center text-muted">No Job posted yet</h4>';
 	}
 }
-
-
 
 
 
@@ -477,17 +523,17 @@ if (isset($_FILES['image'])) {
 
 				$x_user->imageToDatabase($company_name, $product_type, $new_file_name);
 				echo 'Posted Successfully';
-			}  else {
-				
-				echo  $x_user->showMessage('danger','Upload error');
+			} else {
+
+				echo  $x_user->showMessage('danger', 'Upload error');
 			}
 		} else {
 
-	 	echo  $x_user->showMessage('danger','Files must be less than 1mb');
+			echo  $x_user->showMessage('danger', 'Files must be less than 1mb');
 		}
 	} else {
 
-		echo  $x_user->showMessage('danger','Invalid image');
+		echo  $x_user->showMessage('danger', 'Invalid image');
 	}
 }
 
@@ -520,16 +566,16 @@ if (isset($_FILES['blogImage'])) {
 				$x_user->postBlog($title, $content, $new_file_name);
 				echo 'Posted Successfully';
 			} else {
-				
-				echo  $x_user->showMessage('danger','Upload error');
+
+				echo  $x_user->showMessage('danger', 'Upload error');
 			}
 		} else {
 
-	 	echo  $x_user->showMessage('danger','Files must be less than 1mb');
+			echo  $x_user->showMessage('danger', 'Files must be less than 1mb');
 		}
 	} else {
 
-		echo  $x_user->showMessage('danger','Invalid image');
+		echo  $x_user->showMessage('danger', 'Invalid image');
 	}
 }
 
@@ -567,6 +613,12 @@ if (isset($_POST['del_applicant'])) {
 	$x_user->deleteApplication($id);
 }
 
+if (isset($_POST['del_post'])) {
+	$id = $_POST['del_post'];
+	$x_user->deleteBlog($id);
+}
+
+
 if (isset($_POST['view'])) {
 	$id = $_POST['view'];
 	$output = '';
@@ -575,11 +627,11 @@ if (isset($_POST['view'])) {
 
 		$output .= ' <div class="">	
 		<label>Company Name</label>
-		<input type="text" id="company_name" class="form-control" value="'.$row['company_name'].'" readonly>
+		<input type="text" id="company_name" class="form-control" value="' . $row['company_name'] . '" readonly>
 		<label>Email</label>
-		<input type="text" class="form-control " id="email" value="'.$row['email'].'" readonly>
+		<input type="text" class="form-control " id="email" value="' . $row['email'] . '" readonly>
 		<label>Contact</label>
-        <input type="text" id="contact" class="form-control " value="'.$row['contact'].'" readonly>
+        <input type="text" id="contact" class="form-control " value="' . $row['contact'] . '" readonly>
 					</div>';
 	}
 
@@ -595,8 +647,8 @@ if (isset($_POST['gallery_view'])) {
 
 		$output .= ' <div class="">	
 		
-		<h4>'.$row['title'].'</h4>
-		<p>'.$row['text'].'</p>
+		<h4>' . $row['title'] . '</h4>
+		<p>' . $row['text'] . '</p>
 		
       
 					</div>';
@@ -691,3 +743,144 @@ if (isset($_FILES['galleryImage'])) {
 		echo "Invalid image format";
 	}
 }
+
+
+if (isset($_FILES['product_image'])) {
+
+	$file_name = ($_FILES['product_image']['name']);
+	$file_size = ($_FILES['product_image']['size']);
+	$file_tmp =  ($_FILES['product_image']['tmp_name']);
+	$file_type = ($_FILES['product_image']['type']);
+
+	$file_name_2 = ($_FILES['product_image']['name'][0]);
+	$file_size_2 = ($_FILES['product_image']['size'][0]);
+	$file_tmp_2 =  ($_FILES['product_image']['tmp_name'][0]);
+	$file_type_2 = ($_FILES['product_image']['type'][0]);
+
+	$accept = ["jpg", "png", "gif", "jpeg"];
+	$product_name = $x_user->test_input($_POST['product_name']);
+	$product_price = $x_user->test_input($_POST['price']);
+	$instruction = $x_user->test_input($_POST['instruction']);
+	$dimension = $x_user->test_input($_POST['dimension']);
+	$package_contain = $x_user->test_input($_POST['package_contain']);
+	$warranty = $x_user->test_input($_POST['warranty']);
+	$color = $x_user->test_input($_POST['color']);
+	$post_code = $_POST['post_code'];
+	$x_id = $_POST['xid'];
+	// $x_id ="0";
+	$ext = strtolower(pathinfo($file_name_2, PATHINFO_EXTENSION));
+
+	if (in_array($ext, $accept)) {
+
+		if ($file_size_2 <= 1000000) {
+
+
+			$file_ext = pathinfo($file_name_2, PATHINFO_EXTENSION);
+
+			$new_file = uniqid() . '.' . $file_ext;
+			move_uploaded_file($file_tmp_2, 'media/' . $new_file);
+			$x_user->postProduct(
+				$product_name,
+				$product_price,
+				$instruction,
+				$dimension,
+				$package_contain,
+				$warranty,
+				$color,
+				$post_code,
+				$x_id,
+				$new_file
+			);
+		} else {
+
+			
+		}
+	} else {
+
+	}
+
+	foreach ($file_name as $key => $file_names) {
+
+		$ext = strtolower(pathinfo($file_name[$key], PATHINFO_EXTENSION));
+
+		if (in_array($ext, $accept)) {
+
+			if ($file_size[$key] <= 1000000) {
+
+				$file_ext = pathinfo($file_name[$key], PATHINFO_EXTENSION);
+
+				$new_file_name = uniqid() . '.' . $file_ext;
+
+				move_uploaded_file($file_tmp[$key], 'media/' . $new_file_name);
+				echo $x_user->showMessage('success','Post successfully');
+					$x_user->postProductImage($post_code, $new_file_name);
+			
+			} else {
+
+				echo $x_user->showMessage('danger','Image size should be less 1mb');
+			}
+		} else {
+
+			echo $x_user->showMessage('danger','Invalid image format');
+			
+		}
+	}
+}
+?>
+	<script src="assets/js/jquery-3.5.1.jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+<script>
+	     $(".formAddToCart").submit(function(e) {
+            e.preventDefault();
+            alert("Are you sure you want to Upload")
+            // $("#post").val("Please wait...");
+
+            $.ajax({
+                url: "admin/assets/php/process.php",
+                method: "post",
+                processData: false,
+                contentType: false,
+                cache: false,
+                data: new FormData(this),
+
+
+                success: function(response) {
+                    console.log(response);
+                    // $("#post").val("Post");
+                    $('.Alert').html(response);
+                },
+            });
+        });
+
+	// $(".cartBtn").click(function(e) {
+	// 	alert("alert");
+	// 	const data = {
+	// 		post_id: GetId,
+	// 		priceTag: priceTag,
+	// 		price: price,
+	// 		mateName: mateName,
+	// 		mateContact: mateContact,
+	// 		mateGender: mateGender,
+	// 		mateOption: mateOption,
+	// 		admin_id: admin_id
+
+	// 	}
+	// 	alert("alert");
+	// 	// Sending data to the PHP script using AJAX
+	// 	$.ajax({
+	// 		type: 'POST',
+	// 		url: 'assets/php/handle_rent.php',
+	// 		data: JSON.stringify(data),
+	// 		contentType: 'application/json',
+	// 		success: function(response) {
+	// 			$('.rentAlert').html(response);
+	// 		},
+	// 		error: function(xhr, status, error) {
+	// 			console.error(xhr.responseText);
+	// 		}
+	// 	});
+
+
+	// });
+</script>

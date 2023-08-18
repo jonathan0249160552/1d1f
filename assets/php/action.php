@@ -132,3 +132,5 @@ if (isset($_FILES['cv'])) {
         echo   $user->showMessage('danger', 'Invalid file format');
     }
 }
+
+

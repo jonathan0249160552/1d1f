@@ -32,17 +32,17 @@ require 'assets/php/session.php';
                                                 class="fa fa-caret-down" aria-hidden="true"></span></a>
                                         <input type="checkbox" id="drop-2" />
                                         <ul class="first-dropdwon">
-                                            <li><a href="services.php">Services</a></li>
+                                            <li><a href="services.php">Product Exhibitions</a></li>
                                             <li><a href="jobs.php">Jobs</a></li>
                                             <li><a href="services-single.php">About IDIF</a></li>
-                                            <li><a href="team.php">Team Page</a></li>
+                                            <!-- <li><a href="team.php">Team Page</a></li> -->
                                             <!-- <li><a href="team-single.php">Team single</a></li> -->
                                             <li><a href="gallery.php">Gallery</a></li>
                                             <!-- <li><a href="portfolio-single.php">Portfolio Single</a></li> -->
-                                            <li><a href="timeline.php">Timeline</a></li>
+                                            <li><a href="timeline.php">Projects timeline</a></li>
                                             <li><a href="faq.php">Faq page</a></li>
                                             <!-- <li><a href="coming-soon.php">Coming Soon</a></li> -->
-                                            <li><a href="error.php">404 - error</a></li>
+                                            <!-- <li><a href="error.php">404 - error</a></li> -->
                                             <!-- <li><a href="search-results.php">Search Results</a></li>
                                             <li><a href="email-template.php">Email Template</a></li> -->
                                         </ul>

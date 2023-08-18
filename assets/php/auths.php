@@ -82,6 +82,39 @@ class Authenticates extends Database
     }
 
 
+    public function allProduct()
+    {
+        $sql = "SELECT * FROM  product_name WHERE   deleted IS NULL";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        return $row;
+    }
+
+    public function allCart()
+    {
+        $sql = "SELECT * FROM  cart WHERE   deleted IS NULL";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        return $row;
+    }
+
+
+       public function addCart($product_name, $product_price, $instruction, $dimension, $package_contain, $warranty,$color, $post_code, $cid, $file_name)
+    {
+        $sql = "INSERT INTO cart (product_name,product_price,instruction,dimension,package_contain,warranty,color, post_code,cid,file_name) 
+        VALUES (:product_name,:product_price,:instruction,:dimension,:package_contain,:warranty,:color,:post_code,:cid,:file_name)";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute([
+            'product_name' => $product_name, 'product_price' => $product_price, 'instruction' => $instruction,
+            'dimension' => $dimension, 'package_contain' => $package_contain, 'warranty' => $warranty,'color'=>$color, 'post_code' => $post_code, 'cid' => $cid, 'file_name' => $file_name
+        ]);
+
+        return true;
+    }
 
 
 

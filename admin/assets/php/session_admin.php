@@ -23,11 +23,12 @@ $x_user_name = $_SESSION['admin'];
 
 $data = $x_user->currentAdmin($x_user_name);
 $cid =$data['id'];
-$cname= $data['full_name'];
+$admin_id =$data['admin_id'];
+$x_name= $data['full_name'];
 $x_user_name= $data['user_name'];
-$cemail= $data['email'];
-$cpass= $data['password'];
-$cphone= $data['phone'];
+$x_email= $data['email'];
+$x_pass= $data['password'];
+$x_phone= $data['phone'];
 $created=$data['created_on'];
 // $x_user_profile=$data['profile_pic'];
 

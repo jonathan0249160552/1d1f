@@ -1,6 +1,6 @@
 <?php
 
-require 'config.php';
+require 'conn.php';
 class Authenticates extends Database
 {
 
@@ -75,6 +75,8 @@ class Authenticates extends Database
         return $row;
     }
 
+
+
     public function allGalleryDetails($val)
     {
         $sql = "SELECT * FROM  gallery WHERE id=$val AND deleted IS NULL";
@@ -108,7 +110,7 @@ class Authenticates extends Database
         return $row;
     }
 
-    
+
     public function allBlog()
     {
         $sql = "SELECT * FROM  blog WHERE   deleted IS NULL";
@@ -118,6 +120,8 @@ class Authenticates extends Database
 
         return $row;
     }
+
+   
 
 
 
@@ -155,7 +159,7 @@ class Authenticates extends Database
         return $row;
     }
 
-    
+
 
     public function imageToDatabase($company_name, $type, $picture)
     {
@@ -190,7 +194,7 @@ class Authenticates extends Database
         return true;
     }
 
-    public function postGallery($title, $content,$pic)
+    public function postGallery($title, $content, $pic)
     {
         $sql = "INSERT INTO gallery (title,text,pic) VALUES (:title,:text,:pic)";
         $stmt = $this->conn->prepare($sql);
@@ -200,6 +204,34 @@ class Authenticates extends Database
 
         return true;
     }
+
+    public function postProductImage($post_code, $file_name)
+    {
+        $sql = "INSERT INTO product_image (post_code,file_name) VALUES (:post_code,:file_name)";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute([
+            'post_code' => $post_code, 'file_name' => $file_name
+        ]);
+
+        return true;
+    }
+
+    public function postProduct($product_name, $product_price, $instruction, $dimension, $package_contain, $warranty,$color, $post_code, $cid, $file_name)
+    {
+        $sql = "INSERT INTO product_name (product_name,product_price,instruction,dimension,package_contain,warranty,color, post_code,cid,file_name) 
+        VALUES (:product_name,:product_price,:instruction,:dimension,:package_contain,:warranty,:color,:post_code,:cid,:file_name)";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute([
+            'product_name' => $product_name, 'product_price' => $product_price, 'instruction' => $instruction,
+            'dimension' => $dimension, 'package_contain' => $package_contain, 'warranty' => $warranty,'color'=>$color, 'post_code' => $post_code, 'cid' => $cid, 'file_name' => $file_name
+        ]);
+
+        return true;
+    }
+
+ 
+
+
 
 
 
@@ -258,6 +290,21 @@ class Authenticates extends Database
         return true;
     }
 
+    public function deleteBlog($id)
+    {
+        $sql = "UPDATE  blog set deleted = 1  WHERE id= $id";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
 
-    
+        return true;
+    }
+
+    public function count($val)
+    {
+        $sql = "SELECT * FROM $val WHERE  deleted IS NULL";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        $count = $stmt->rowCount();
+        return $count;
+    }
 }

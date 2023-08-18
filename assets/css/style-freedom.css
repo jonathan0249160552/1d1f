@@ -21424,7 +21424,7 @@ button span.fa-angle-up {
   font-size: 0;
   white-space: nowrap;
   transition: opacity 0.2s ease-in-out 0.1s, visibility 0.2s ease-in-out 0.1s, font-size 0.1s ease, right 0.2s ease-in-out 0.1s;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .w3l-products-page .proList.grid .wpbProBlock .btnButtonProduct .productQuickView .btnProductQuickview {
