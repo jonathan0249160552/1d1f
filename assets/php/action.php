@@ -21,7 +21,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'customer_register') {
     $password = $user->test_input($_POST['password']);
     // $hnewPass = Password_hash($password, PASSWORD_DEFAULT);
     $hpass = password_hash($password, PASSWORD_DEFAULT);
-    print_r($_POST);
+    
 
 
     if ($user->user_exist($user_name)) {

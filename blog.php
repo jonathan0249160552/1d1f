@@ -29,9 +29,9 @@
                     <!-- left side blog post content -->
                     <div class="single-left">
                         <div class="single-left1">
-                            <a href="blog-single.html"><img src="assets/images/bg2.jpg" alt=" "
+                            <a href="blog-single.html"><img src="assets/images/bg2.jpeg" alt=" "
                                     class="img-responsive" /></a>
-                            <h5 class="card-title"> Painting walls and cleaning house </h5>
+                            <h5 class="card-title">  OWNERSHIP OF THE 1D1F CUF</h5>
                             <ul class="admin-post">
                                 <li>
                                     <p><img class="img-responsive" src="assets/images/admin.jpg"> Alexander</p>
@@ -40,14 +40,30 @@
                                     <p><span class="fa fa-clock-o"></span> September 23, 2019.</p>
                                 </li>
                                 <li>
-                                    <p><span class="fa fa-home"></span> Category: Home maintenance</p>
+                                    <p><span class="fa fa-home"></span> Category:</p>
                                 </li>
                             </ul>
-                            <p class="">Fermentum viverra eros. Praesent neque purus, rhoncus nec nibh non, mollis
-                                sodales odio. Nullam
-                                facilisis diam non magna porta luctus. Aenean facilisis erat posuere erat ornare
-                                ultrices.
-                                semper augue. </p>
+                            <p class="">The 1D1F CUP is owned by a group of rice farmers (represent by the mother Association of individual FBOs)
+                                and other stakeholder through the Nkrankwanta Rice Processing Factory Ltd.The shareholding structure is the follows:
+                                70% by Dormaa West District Union of rice farmers Association LBG(the mother Association of Rice Farmer Based organization in the Dormaa West District of the Bono Region). 10% 
+                                by Ministry of Trade and Industry 
+                                10% by Dormaa West District Assembly
+                                10% by traditional Council
+                                The Dormaa West District Union Rice Farmers Association comprise 12 individual FBOs with over 150 farmers.
+                                New FBOs within the district (formed or identified by either by either the designated BRC or Management of the Nkrankwanka Rice Processing Factory Ltd shall be admitted into the 
+                                Dormaa West District Union of Rice Farmers Association upon application to leadership)
+                            </p>
+                            <h5>BOARD AND MANAGEMENT OF THE 1D1FCUF</h5>
+                            <p>The Ministry of Trade and Industry (MOT) has constitute a member Boarder of Directors that has oversight responsibilities and operation of the 
+                            factory. It has the following representation</p>
+                            <ul>
+                                <li>Dormaa West District Union of Rice Association</li>
+                                <li>Ministry of Trade Industry : 1</li>
+                                <li>Traditional Council: 1</li>
+                                <li>The District Coordinating Direct representing the District Assembly:1</li>
+                                <li>One expert in the Agribusiness sector</li>
+                                <li>One Legal Practitioner</li>
+                            </ul>
                             <a href="blog-single.html" class="blog-btn btn">Read post</a>
                         </div>
                         <div class="single-left1">
@@ -116,12 +132,13 @@
                         <aside class="posts p-4 border">
                             <h3 class="aside-title">Categories</h3>
                             <ul class="category">
-                                <li><a href="#link">Furniture moving <span> (11)</span></a></li>
-                                <li><a href="#link">Painting a house <span>(24)</span></a></li>
-                                <li><a href="#link">Electrical wiring <span>(18)</span></a></li>
-                                <li><a href="#link">Carpenter wooden work <span>(08)</span></a></li>
-                                <li><a href="#link">Laundry and carpet <span>(38)</span></a></li>
-                                <li><a href="#link">House cleaning <span>(26)</span></a></li>
+                                <li><a href="#link">Agricultural processing <span> (11)</span></a></li>
+                                <li><a href="#link">Garments and textiles <span>(24)</span></a></li>
+                                <li><a href="#link">Paper and paper products<span>(18)</span></a></li>
+                                <li><a href="#link">Pharmaceuticals <span>(08)</span></a></li>
+                                <li><a href="#link">Components manufacturing <span>(38)</span></a></li>
+                                <li><a href="#link">Packaging materials<span>(26)</span></a></li>
+                             
                             </ul>
                         </aside>
 

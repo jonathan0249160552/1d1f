@@ -461,24 +461,26 @@ if (isset($_POST['action']) && $_POST['action'] == 'displayBlog') {
 		$output .= '';
 		foreach ($data as $row) {
 
-			$output .= '    
-			<div class="grids5-info">
-				<a href="gallery.html"><img src="admin/assets/php/media/' . $row['picture'] . '" alt="" /></a>
-				<div class="blog-info">
-					<h4><a href="#c">' . $row['title'] . '</a></h4>
-					<p>' . $row['content'] . '</p>
-					<ul class="blog-list">
-						<li>
-							<p><span class="fa fa-clock-o"></span> ' . $x_user->timeInAgo($row['posted_on']) . '</p>
-						</li>
-						<li>
-							
-						</li>
-						<li>
-						
-						</li>
-					</ul>
-				</div>
+			$output .= ' 
+			<div class="grids5-info m-2">
+			<a href="gallery.php"><img src="admin/assets/php/media/' . $row['picture'] . '" alt="" /></a>
+			<div class="blog-info">
+				<h4><a href="gallery.php"><h4><a href="#c">' . $row['title'] . '</a></h4></a></h4>
+				<p>' . $row['content'] . '</p>
+				<ul class="blog-list">
+					<li>
+						<p><span class="fa fa-clock-o"></span> Sep 2019</p>
+					</li>
+					<li>
+						<p><span class="fa fa-heart"></span> 20 </p>
+					</li>
+					<li>
+						<p></span><span class="fa fa-comments"></span> 2 </p>
+					</li>
+				</ul>
+			</div>
+		</div>   
+
 			';
 		}
 

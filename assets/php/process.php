@@ -25,7 +25,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'displayProduct') {
 					<p class="proAttr instock hidden ">Many In Stock</p>
 					<div  class=" justify-content-between btnButtonProduct">
 						<div  class="productQuickView ">
-							<a class=" btnProduct btnProductQuickview" href="ecommerce-single.html" data-handle="durable-alloy-work-lamp-1" title="Quick View">
+							<a class=" btnProduct btnProductQuickview" href="ecommerce-single.php" data-handle="durable-alloy-work-lamp-1" title="Quick View">
 								Quick View
 								<span class="fa fa-info-circle"></span>
 							</a>
@@ -51,7 +51,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'displayProduct') {
 				</div>
 				<div class="proContent">
 					<h5 class="proName">
-						<a href="ecommerce-single.html">' . $row['product_name'] . '</a>
+						<a href="ecommerce-single.php">' . $row['product_name'] . '</a>
 					</h5>
 					<div class="proPrice">
 						<div class="priceProduct priceCompare">$' . $price_1 . ' </div>
@@ -106,10 +106,10 @@ if (isset($_POST['action']) && $_POST['action'] == 'displayCart') {
             $output .= '             
             <div class="product">
                 <div class="product-image">
-                    <a href="ecommerce-single.html"><img src="admin/assets/php/media/' . $row['file_name'] . '" alt="" class="img-responsive"></a>
+                    <a href="ecommerce-single.php"><img src="admin/assets/php/media/' . $row['file_name'] . '" alt="" class="img-responsive"></a>
                 </div>
                 <div class="product-details">
-                    <div class="product-title"><a href="ecommerce-single.html">' . $row['product_name'] . '</a>
+                    <div class="product-title"><a href="ecommerce-single.php">' . $row['product_name'] . '</a>
                     </div>
                     <p class="product-description"><b>Color:</b> ' . $row['color'] . '</p>
                 </div>
@@ -124,27 +124,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'displayCart') {
                 </div>
                 <div class="product-line-price "  id="priceDisplay'.$id.'">'.$price.'</div>
             </div>
-           
-            
-            <div class="totals">
-                <div class="totals-item">
-                    <label>Subtotal</label>
-                    <div class="totals-value" id="cart-subtotal">141.96</div>
-                </div>
-                <div class="totals-item">
-                    <label>Tax (5%)</label>
-                    <div class="totals-value" id="cart-tax">3.60</div>
-                </div>
-                <div class="totals-item">
-                    <label>Shipping</label>
-                    <div class="totals-value" id="cart-shipping">15.00</div>
-                </div>
-                <div class="totals-item totals-item-total">
-                    <label>Grand Total</label>
-                    <div class="totals-value" id="cart-total">160.56</div>
-                </div>
-            </div>
-            <a href="login.html" class="checkout">Checkout</a>
+       
         </div>
  <script>
  function price() {
@@ -177,7 +157,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'displayCart') {
  
     $(".formAddToCart").submit(function(e) {
         e.preventDefault();
-        alert("Are you sure you want to Upload")
+        // alert("Item added")
         // $("#post").val("Please wait...");
 
         $.ajax({
@@ -192,7 +172,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'displayCart') {
             success: function(response) {
                 console.log(response);
                 // $("#post").val("Post");
-                $('.Alert').html(response);
+                $('.Alert').php(response);
             },
         });
     });

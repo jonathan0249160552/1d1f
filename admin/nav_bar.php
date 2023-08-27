@@ -101,10 +101,10 @@ require 'assets/php/session_admin.php';
 <body>
   <div class="topnav" class="justify-content-between">
     <a onclick="openNav()" href="#nav"><i class="fa fa-bars "></i></a>
-    <a class="active" href="#home">Dashboard</a>
-    <a href="#news">Post Gallery</a>
-    <a href="#contact">Jop Application</a>
-    <a href="#about">Contacts</a>
+    <a class="active" href="home.php">Dashboard</a>
+    <a href="post_gallery.php">Post Gallery</a>
+    <a href="applications.php">Jop Application</a>
+    <a href="contact.php">Contacts</a>
     <a href="create_account.php" class="link-nav">Add User</a>
     <a href="admin_logout.php" class="link-nav">Logout</a>
   </div>
@@ -118,10 +118,11 @@ require 'assets/php/session_admin.php';
     <a href="customers.php">Customers</a>
     <a href="all_exhibitions.php">All exhibitions</a>
     <a href="exhibitions.php">Post exhibitions</a>
+    <a href="all_products.php">All products</a>
     <a href="post_products.php">Post products</a>
     <a href="post_job.php">Post Jobs</a>
-    <a href="all_jobs.php">Posted Jobs</a>
-    <a href="all_gallery.php">Posted Galleries</a>
+    <a href="all_jobs.php">All Jobs</a>
+    <a href="all_gallery.php">All Galleries</a>
     <a href="post_gallery.php">Post Gallery</a>
     <a href="applications.php">Jop Applications</a>
     <a href="contact.php">Contacts</a>

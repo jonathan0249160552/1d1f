@@ -57,7 +57,7 @@
   <?php require 'nav_bar.php'; ?>
 
   <div style="margin-top: 40px;padding-bottom:40px;" class="card-body">
-    <div class="toolbar displayAllPost">
+    <div class="toolbar displayAllPost table-responsive">
 
     </div>
 

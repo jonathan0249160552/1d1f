@@ -77,7 +77,7 @@ require 'assets/php/session.php';
                                         <input type="checkbox" id="drop-5" />
                                         <ul>
                                             <li><a href="ecommerce.php">Ecommerce</a></li>
-                                            <li><a href="ecommerce-single.php">Ecommerce Single</a></li>
+                                            <!-- <li><a href="ecommerce-single.php">Ecommerce Single</a></li> -->
                                             <li><a href="ecommerce-cart.php">Ecommerce Cart</a></li>
                                         </ul>
                                     </li>

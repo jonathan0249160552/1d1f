@@ -15,8 +15,7 @@
 </head>
 
 <body>
-    <meta name="robots" content="noindex">
-
+ 
     <body>
         <?php require 'header.php' ?>
         <!-- header -->
@@ -37,7 +36,7 @@
                                         <h3 class="title-cover-9">One district one factory initiative app</h3>
                                         <p class="para-cover-9">The 1D1F is one of the main components of Government’s
                                             Ten Point Industrialization Plan.</p>
-                                        <a href="about.html" class="actionbg button-cover-9">Read More</a>
+                                        <a href="about.php" class="actionbg button-cover-9">Read More</a>
                                         <a href="contact.php" class="actionbg-border button-cover-9">Get in touch</a>
                                     </div>
                                 </div>
@@ -52,7 +51,7 @@
                                         <!-- <p class="para-cover-9">Excepteur sint occaecat cupidatat non proident, sunt in
                                         culpa qui officia sed deserunt mollit anim id est laborum mollit anim id est
                                         nulla.</p> -->
-                                        <a href="about.html" class="actionbg button-cover-9">Read More</a>
+                                        <a href="about.php" class="actionbg button-cover-9">Read More</a>
                                         <a href="contact.php" class="actionbg-border button-cover-9">Get in touch</a>
                                     </div>
                                 </div>
@@ -67,7 +66,7 @@
                                         <!-- <p class="para-cover-9">Sed ut perspiciatis unde omnis iste natus error sit
                                         voluptatem accus antium dolor emque laudantium sunt in culpa qui laborum eu
                                         fugiat nulla.</p> -->
-                                        <a href="about.html" class="actionbg button-cover-9">Read More</a>
+                                        <a href="about.php" class="actionbg button-cover-9">Read More</a>
                                         <a href="contact.php" class="actionbg-border button-cover-9">Get in touch</a>
                                     </div>
                                 </div>
@@ -82,7 +81,7 @@
                                         <!-- <p class="para-cover-9">Once aute irure dolor in reprehenderit in voluptate velit
                                         esse cillum dolore eu fugiat nulla pariatur consectetur adipiscing elit eu
                                         fugiat nulla.</p> -->
-                                        <a href="about.html" class="actionbg button-cover-9">Read More</a>
+                                        <a href="about.php" class="actionbg button-cover-9">Read More</a>
                                         <a href="contact.php" class="actionbg-border button-cover-9">Get in touch</a>
                                     </div>
                                 </div>
@@ -109,42 +108,38 @@
 
         <!-- //covers -->
 
-        <div class="display-ad" style="margin: 8px auto;display: block;text-align: center;">
-            <!---728x90--->
-
-        </div>
         <!-- features -->
         <section class="w3l-feature-9">
             <div class="main-w3">
                 <div class="wrapper">
                     <div class="d-flex main-cont-wthree-fea" style="overflow-x: scroll;">
                         <div class="grids-feature">
-                            <a href="services.html"> <span class="fa fa-shopping-basket"></span>
-                                <h4><a href="services.html" class="title-head">Exhibitions</a></h4>
+                            <a href="services.php"> <span class="fa fa-shopping-basket"></span>
+                                <h4><a href="services.php" class="title-head">Exhibitions</a></h4>
                                 <p>Products produced by the factories
                                     established under the 1D1F initiative are exhibited there
                                 </p>
                             </a>
                         </div>
                         <div class="grids-feature">
-                            <a href="blog-single.html"> <span class="fa fa-users"></span>
-                                <h4><a href="blog-single.html" class="title-head">Stakeholders</a></h4>
+                            <a href="blog-single.php"> <span class="fa fa-users"></span>
+                                <h4><a href="blog-single.php" class="title-head">Stakeholders</a></h4>
                                 <p>The app provide information on the progress of factories and related activities for
                                     stakeholders
                                 </p>
                             </a>
                         </div>
                         <div class="grids-feature">
-                            <a href="ecommerce.html"> <span class="fa fa-shopping-cart"></span>
-                                <h4><a href="ecommerce.html" class="title-head"> Buy & Sell</a></h4>
+                            <a href="ecommerce.php"> <span class="fa fa-shopping-cart"></span>
+                                <h4><a href="ecommerce.php" class="title-head"> Buy & Sell</a></h4>
                                 <p>This app serve as an e-commerce platform for one district one factory products and
                                     services
                                 </p>
                             </a>
                         </div>
                         <div class="grids-feature">
-                            <a href="team-single.html"> <span class="fa fa-chart-bar"></span>
-                                <h4><a href="timeline.html" class="title-head">Projects</a></h4>
+                            <a href="data.php"> <span class="fa fa-chart-bar"></span>
+                                <h4><a href="timeline.php" class="title-head">Projects</a></h4>
                                 <p>Status of Implementation: 278 1D1F Projects at now at various stages of
                                     implementation.
                                 </p>
@@ -157,24 +152,20 @@
         </section>
         <!-- //features -->
 
-        <div class="display-ad" style="margin: 8px auto;display: block;text-align: center;">
-            <!---728x90--->
-
-        </div>
         <!-- grids block 4 -->
         <section class="w3l-grids-4">
             <div id="grids4-block">
                 <div class="wrapper">
-                    <a href="gallery.html">
+                    <a href="gallery.php">
                         <h5 class="heading">Gallery</h5>
                     </a>
                     <h3 class="heading">Progress made so far</h3>
                     <div class="owl-carousel owl-theme text-center">
                         <div class="item shadow">
                             <div class="grids4-info">
-                                <a href="gallery.html"><img src="assets/images/1.jpeg" class="img-responsive " alt="" /></a>
+                                <a href="gallery.php"><img src="assets/images/1.jpeg" class="img-responsive " alt="" /></a>
                                 <div class="info">
-                                    <h5><a href="gallery.html">Kasapreko beverage factory</a></h5>
+                                    <h5><a href="gallery.php">Kasapreko beverage factory</a></h5>
                                     <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
                                         quam.
                                     </p>
@@ -183,9 +174,9 @@
                         </div>
                         <div class="item">
                             <div class="grids4-info">
-                                <a href="gallery.html"><img src="assets/images/2.jpeg" class="img-responsive " alt="" /></a>
+                                <a href="gallery.php"><img src="assets/images/2.jpeg" class="img-responsive " alt="" /></a>
                                 <div class="info">
-                                    <h5><a href="gallery.html">Water processing factory</a></h5>
+                                    <h5><a href="gallery.php">Water processing factory</a></h5>
                                     <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
                                         quam.
                                     </p>
@@ -194,9 +185,9 @@
                         </div>
                         <div class="item">
                             <div class="grids4-info">
-                                <a href="gallery.html"><img src="assets/images/bg2.jpeg" class="img-responsive " alt="" /></a>
+                                <a href="gallery.php"><img src="assets/images/bg2.jpeg" class="img-responsive " alt="" /></a>
                                 <div class="info">
-                                    <h5><a href="gallery.html">Tomato processing factory</a></h5>
+                                    <h5><a href="gallery.php">Tomato processing factory</a></h5>
                                     <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
                                         quam.
                                     </p>
@@ -205,9 +196,9 @@
                         </div>
                         <div class="item">
                             <div class="grids4-info">
-                                <a href="gallery.html"><img src="assets/images/4c.jpeg" width="700px" class="img-responsive " alt="" /></a>
+                                <a href="gallery.php"><img src="assets/images/4c.jpeg" width="700px" class="img-responsive " alt="" /></a>
                                 <div class="info">
-                                    <h5><a href="gallery.html">Cleaning</a></h5>
+                                    <h5><a href="gallery.php">Cleaning</a></h5>
                                     <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
                                         quam.
                                     </p>
@@ -216,9 +207,9 @@
                         </div>
                         <div class="item">
                             <div class="grids4-info">
-                                <a href="gallery.html"> <img src="assets/images/bg4c.jpeg" class="img-responsive " alt="" /></a>
+                                <a href="gallery.php"> <img src="assets/images/bg4c.jpeg" class="img-responsive " alt="" /></a>
                                 <div class="info">
-                                    <h5><a href="gallery.html">House keeping</a></h5>
+                                    <h5><a href="gallery.php">House keeping</a></h5>
                                     <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
                                         quam.
                                     </p>
@@ -227,9 +218,9 @@
                         </div>
                         <div class="item">
                             <div class="grids4-info">
-                                <a href="gallery.html"><img src="assets/images/18c.jpeg" class="img-responsive " alt="" /></a>
+                                <a href="gallery.php"><img src="assets/images/18c.jpeg" class="img-responsive " alt="" /></a>
                                 <div class="info">
-                                    <h5><a href="gallery.html">Nose Musk Factory</a></h5>
+                                    <h5><a href="gallery.php">Nose Musk Factory</a></h5>
                                     <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
                                     </p>
                                 </div>
@@ -237,20 +228,9 @@
                         </div>
                         <div class="item">
                             <div class="grids4-info">
-                                <a href="gallery.html"> <img src="assets/images/8.jpg" class="img-responsive " alt="" /></a>
+                                <a href="gallery.php"> <img src="assets/images/8.jpg" class="img-responsive " alt="" /></a>
                                 <div class="info">
-                                    <h5><a href="gallery.html">Timber Processing Factory</a></h5>
-                                    <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
-                                        quam.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="grids4-info">
-                                <a href="gallery.html"> <img src="assets/images/9.jpeg" class="img-responsive " alt="" /></a>
-                                <div class="info">
-                                    <h5><a href="gallery.html">Yam & Cassava Fatory</a></h5>
+                                    <h5><a href="gallery.php">Timber Processing Factory</a></h5>
                                     <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
                                         quam.
                                     </p>
@@ -259,9 +239,20 @@
                         </div>
                         <div class="item">
                             <div class="grids4-info">
-                                <a href="gallery.html"> <img src="assets/images/10.jpg" class="img-responsive " alt="" /></a>
+                                <a href="gallery.php"> <img src="assets/images/9.jpeg" class="img-responsive " alt="" /></a>
                                 <div class="info">
-                                    <h5><a href="gallery.html">Pineapple Process Factory</a></h5>
+                                    <h5><a href="gallery.php">Yam & Cassava Fatory</a></h5>
+                                    <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
+                                        quam.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="grids4-info">
+                                <a href="gallery.php"> <img src="assets/images/10.jpg" class="img-responsive " alt="" /></a>
+                                <div class="info">
+                                    <h5><a href="gallery.php">Pineapple Process Factory</a></h5>
                                     <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur elit. Fusce rutrum
                                         quam.
                                     </p>
@@ -279,7 +270,7 @@
         <section class="w3l-form-16">
             <!-- /form-16-section -->
             <div class="form-16-mian">
-                <div class="wrapper">
+                <div class="wrapper" >
                     <div class="forms-16-top">
                         <div class="forms-16-info">
                             <h5>Book service</h5>
@@ -290,11 +281,11 @@
                                 paper products, Packaging materials
                             </p>
                             <a href="contact.php" class="read1">Contact Us</a>
-                            <a href="jobs.html" class="read2">View offers</a>
+                            <a href="jobs.php" class="read2">View offers</a>
                             <!-- <button class="read2">View offers</button> -->
                         </div>
                         <div class="form-right-inf">
-                            <div class="form-inner-cont">
+                            <div class="form-inner-cont justify-content-center" style="width:350px;overflow-x:scroll">
                                 <h6>Apply Now<span class="line"></span></h6>
                                 <form action="#" method="post" id="jobForm" class="signin-form">
                                     <div class=" book-form">
@@ -366,7 +357,7 @@
 
                                 </ul>
                                 <!-- <a href="contact.php" class="text-success btn border border-success btn-sm"></a>  -->
-                                <button class="btn  btn-success " style="width: 100px;"><a href="contact.php" class="text-white">Join</a></button>
+                                <button class="btn  btn-success " style="width: 100px;"><a href="register_fac.php" class="text-white">Join</a></button>
                             </div>
                         </div>
 
@@ -395,67 +386,9 @@
                 <div class="wrapper">
                     <h5 class="heading">Our blog</h5>
                     <h3 class="heading">Latest news</h3>
-                    <div class="d-grid displayBlog">
-                        <div class="grids5-info">
-                            <a href="gallery.html"><img src="assets/images/31.jpeg" alt="" /></a>
-                            <div class="blog-info">
-                                <h4><a href="gallery.html">Replacement, Repairs.</a></h4>
-                                <p>Fusce rutrum quam a ultrices rhoncus. Nulla eu ipsum tempus est et vitae nulla empus
-                                    est
-                                    suscipit et dolor amet.</p>
-                                <ul class="blog-list">
-                                    <li>
-                                        <p><span class="fa fa-clock-o"></span> Sep 2019</p>
-                                    </li>
-                                    <li>
-                                        <p><span class="fa fa-heart"></span> 20 </p>
-                                    </li>
-                                    <li>
-                                        <p></span><span class="fa fa-comments"></span> 2 </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="grids5-info">
-                            <a href="gallery.html"><img src="assets/images/32.jpeg" alt="" /></a>
-                            <div class="blog-info">
-                                <h4><a href="gallery.html">Sump and tank cleaning</a></h4>
-                                <p>Fusce rutrum quam a ultrices rhoncus. Nulla eu ipsum tempus est et vita
-                                    est
-                                    suscipit et dolor amet.</p>
-                                <ul class="blog-list">
-                                    <li>
-                                        <p><span class="fa fa-clock-o"></span> Sep 2019</p>
-                                    </li>
-                                    <li>
-                                        <p><span class="fa fa-heart"></span> 20</p>
-                                    </li>
-                                    <li>
-                                        <p><span class="fa fa-comments"></span> 2 </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="grids5-info">
-                            <a href="gallery.html"><img src="assets/images/11.jpeg" alt="" /></a>
-                            <div class="blog-info">
-                                <h4><a href="gallery.html">House keeping, cleaning</a></h4>
-                                <p>Fusce rutrum quam a ultrices rhoncus. Nulla eu ipsum tempus est et vitae nulla empus
-                                    est
-                                    suscipit et dolor amet.</p>
-                                <ul class="blog-list">
-                                    <li>
-                                        <p><span class="fa fa-clock-o"></span> Sep 2019</p>
-                                    </li>
-                                    <li>
-                                        <p><span class="fa fa-heart"></span> 20 </p>
-                                    </li>
-                                    <li>
-                                        <p><span class="fa fa-comments"></span>10</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="d-grid ">
+                      <div class="d-flex">
+                      <div class=" displayBlog"></div>
                     </div>
                 </div>
         </div>
